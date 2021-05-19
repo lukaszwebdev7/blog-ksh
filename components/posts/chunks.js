@@ -19,9 +19,9 @@ function Chunks(props) {
 				{chosenArray.map((post) => <PostItem key={post.slug} post={post} />)}
 			</ul>
 			{arrays.map((array, index) => (
-				<li key={index} onClick={(e) => loadPostsHandler(e, array)}>
+				<span key={index} onClick={(e) => loadPostsHandler(e, array)}>
 					{index + 1}
-				</li>
+				</span>
 			))}
 		</div>
 	);

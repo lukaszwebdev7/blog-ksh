@@ -1,6 +1,6 @@
 module.exports = {
 	purge: [ './pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}' ],
-	darkMode: false, // or 'media' or 'class'
+	darkMode: false,
 	theme: {
 		textColor: (theme) => ({
 			...theme('colors'),
@@ -21,14 +21,7 @@ module.exports = {
 			black: '#000',
 			gold: '#A98A51'
 		}),
-		fontFamily: {
-			sans: 'Roboto',
-			serif: [ 'Georgia', 'Cambria', 'Lobster Two' ],
-			mono: [ 'SFMono-Regular', 'Menlo' ],
-			display: [ '"Londrina Outline"' ],
-			body: [ 'Open Sans' ],
-			wnikliwy: 'Roboto Condensed'
-		},
+		fontFamily: {},
 		boxShadow: {
 			'3xl': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
 		},
@@ -101,5 +94,5 @@ module.exports = {
 	variants: {
 		extend: {}
 	},
-	plugins: []
+	plugins: [ require('@tailwindcss/typography') ]
 };
