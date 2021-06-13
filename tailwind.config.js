@@ -8,6 +8,8 @@ module.exports = {
 			'gray-75': '#bfbfbf',
 			'gray-25': '#404040',
 			'teal-400': '#4fd1c5',
+			'blue-version': '#233e8b',
+			gray: '#333333',
 			white: '#ffffff',
 			coffee: '#AA7642',
 			lightblue: '#2458C4',
@@ -78,7 +80,7 @@ module.exports = {
 				white: '#FFFFFF',
 				lightblue: '#2458C4',
 				footer: '#003366',
-				gold: '#A98A51',
+				gold: '#FFDE59',
 				indigo: '#0D4F8B',
 				black: '#000000'
 			}),

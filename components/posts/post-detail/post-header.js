@@ -3,10 +3,10 @@ import Image from 'next/image';
 function PostHeader(props) {
 	return (
 		<header>
-			<h3>{props.date}</h3>
-			<h3>{props.category}</h3>
-			<h1>{props.title}</h1>
-			<Image src={props.image} alt={props.title} width={200} height={150} />
+			<p className="text-sm md:text-lg text-lightblue font-bold uppercase mb-2">{props.category}</p>
+			<p className="text-xl md:text-3xl xl:text-4xl mb-2 font-bold">{props.title}</p>
+			<p className="text-sm md:text-lg">{props.date}</p>
+			<Image src={props.image} alt={props.title} width={800} height={500} />
 		</header>
 	);
 }
