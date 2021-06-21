@@ -4,10 +4,16 @@ import PostItem from './post-item';
 
 function Chunks(props) {
 	const arrays = props.arrays;
+	const posts = props.posts;
 
 	const firstArray = arrays[0];
 
 	const [ chosenArray, setChosenArray ] = useState(firstArray);
+
+	const jawna = posts.filter((post) => post.category === 'spółka jawna');
+	const zoo = posts.filter((post) => post.category === 'spółka z o.o.');
+	const partnerska = posts.filter((post) => post.category === 'spółka partnerska');
+	const prostaakcyjna = posts.filter((post) => post.category === 'prosta spółka akcyjna');
 
 	function loadPostsHandler(e, array) {
 		setChosenArray(array);
@@ -23,6 +29,12 @@ function Chunks(props) {
 					{index + 1}
 				</span>
 			))}
+			<div>
+				<button onClick={() => setChosenArray(jawna)}>spółka jawna</button>
+				<button onClick={() => setChosenArray(partnerska)}>spółka partnerska</button>
+				<button onClick={() => setChosenArray(zoo)}>spółka z o.o.</button>
+				<button onClick={() => setChosenArray(prostaakcyjna)}>prosta spółka akcyjna</button>
+			</div>
 		</div>
 	);
 }

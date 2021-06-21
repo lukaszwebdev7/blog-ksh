@@ -21,7 +21,9 @@ module.exports = {
 			default: theme('colors.gray.300', 'currentColor'),
 			coffee: '#AA7642',
 			black: '#000',
-			gold: '#A98A51'
+			gold: '#A98A51',
+			gray: '#333333',
+			'blue-version': '#233e8b'
 		}),
 		fontFamily: {},
 		boxShadow: {

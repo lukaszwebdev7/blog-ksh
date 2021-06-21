@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import { Fragment } from 'react';
 import SectionOne from '../components/home-page/section-one';
 import SectionTwo from '../components/home-page/section-two';
+import SectionThree from '../components/home-page/section-three';
 
 import LatestPosts from '../components/home-page/latest-posts';
 
@@ -19,8 +19,9 @@ function HomePage(props) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<SectionOne />
-			<SectionTwo />
 			<LatestPosts posts={props.posts} />
+			<SectionTwo />
+			<SectionThree posts={props.posts} />
 		</div>
 	);
 }

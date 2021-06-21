@@ -20,7 +20,7 @@ function AllPostsPage(props) {
 	return (
 		<ul>
 			<li>Wszystkie posty</li>
-			<Chunks arrays={arrays} />
+			<Chunks posts={posts} arrays={arrays} />
 		</ul>
 	);
 }
