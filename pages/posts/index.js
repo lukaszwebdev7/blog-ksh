@@ -5,7 +5,7 @@ import Chunks from '../../components/posts/chunks';
 function AllPostsPage(props) {
 	const posts = props.posts;
 
-	const size = 3;
+	const size = 6;
 
 	function chunksMaker() {
 		const result = [];
@@ -19,7 +19,6 @@ function AllPostsPage(props) {
 
 	return (
 		<ul>
-			<li>Wszystkie posty</li>
 			<Chunks posts={posts} arrays={arrays} />
 		</ul>
 	);

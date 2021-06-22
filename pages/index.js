@@ -18,9 +18,11 @@ function HomePage(props) {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<SectionOne />
+
 			<LatestPosts posts={props.posts} />
+			<SectionOne />
 			<SectionTwo />
+
 			<SectionThree posts={props.posts} />
 		</div>
 	);

@@ -3,7 +3,7 @@ import Image from 'next/image';
 function SectionTwo() {
 	return (
 		<div>
-			<div className="flex justify-center mb-12 sm:mt-12 ">
+			<div className="flex justify-center mb-12 sm:mt-20 ">
 				<div className="flex flex-col sm:flex-row w-11/12">
 					<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet" />
 					<div className="sm:ml-8 text-justify sm:text-left ">
