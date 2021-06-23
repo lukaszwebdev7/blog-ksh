@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import PostItem from './post-item';
 
@@ -64,31 +64,102 @@ function Chunks(props) {
 		setChosenArray(array);
 	}
 
+	function activeBackground(id) {
+		const btnList = document.getElementsByClassName('active');
+		const firstButton = document.getElementById('1');
+		const secondButton = document.getElementById('2');
+		const thirdButton = document.getElementById('3');
+		const fourthButton = document.getElementById('4');
+		const fifthButton = document.getElementById('5');
+
+		const first = btnList.item(0).id;
+		const second = btnList.item(1).id;
+		const third = btnList.item(2).id;
+		const fourth = btnList.item(3).id;
+		const fifth = btnList.item(4).id;
+
+		if (first === id) {
+			firstButton.classList.add('bg-yellow-box');
+		}
+		if (first != id) {
+			firstButton.classList.remove('bg-yellow-box');
+		}
+		if (second === id) {
+			secondButton.classList.add('bg-yellow-box');
+		}
+		if (second != id) {
+			secondButton.classList.remove('bg-yellow-box');
+		}
+		if (third === id) {
+			thirdButton.classList.add('bg-yellow-box');
+		}
+		if (third != id) {
+			thirdButton.classList.remove('bg-yellow-box');
+		}
+		if (fourth === id) {
+			fourthButton.classList.add('bg-yellow-box');
+		}
+		if (fourth != id) {
+			fourthButton.classList.remove('bg-yellow-box');
+		}
+		if (fifth === id) {
+			fifthButton.classList.add('bg-yellow-box');
+		}
+		if (fifth != id) {
+			fifthButton.classList.remove('bg-yellow-box');
+		}
+	}
+
 	return (
 		<div>
 			<div className="flex flex-col md:flex-row mb-6">
 				<div className="mr-2">Filtrowanie: </div>
-				<button className="mx-2" onClick={() => (setChosenArray(firstArray), setChosenPageIndex(arrays))}>
+				<button
+					id={1}
+					className="mx-2 active bg-yellow-box focus:outline-none"
+					onClick={(id) => (
+						setChosenArray(firstArray), setChosenPageIndex(arrays), activeBackground(id.target.id)
+					)}
+				>
 					wszystkie
 				</button>
 				<button
-					className="mx-2"
-					onClick={() => (setChosenArray(jawnaFirstPage), setChosenPageIndex(jawnaChunks))}
+					id={2}
+					className="mx-2 active focus:outline-none"
+					onClick={(id) => (
+						setChosenArray(jawnaFirstPage), setChosenPageIndex(jawnaChunks), activeBackground(id.target.id)
+					)}
 				>
 					spółka jawna
 				</button>
 				<button
-					className="mx-2"
-					onClick={() => (setChosenArray(partnerskaFirstPage), setChosenPageIndex(partnerskaChunks))}
+					id={3}
+					className="mx-2 active focus:outline-none"
+					onClick={(id) => (
+						setChosenArray(partnerskaFirstPage),
+						setChosenPageIndex(partnerskaChunks),
+						activeBackground(id.target.id)
+					)}
 				>
 					spółka partnerska
 				</button>
-				<button className="mx-2" onClick={() => (setChosenArray(zooFirstPage), setChosenPageIndex(zooChunks))}>
+				<button
+					id={4}
+					className="mx-2 active focus:outline-none"
+					onClick={(id) => (
+						setChosenArray(zooFirstPage), setChosenPageIndex(zooChunks), activeBackground(id.target.id)
+					)}
+				>
 					spółka z o.o.
 				</button>
 				<button
-					className="ml-2"
-					onClick={() => (setChosenArray(prostaakcyjnaFirstPage), setChosenPageIndex(prostaakcyjnaChunks))}
+					id={5}
+					className="ml-2 active focus:outline-none"
+					onClick={(id) => (
+						setChosenArray(prostaakcyjnaFirstPage),
+						setChosenPageIndex(prostaakcyjnaChunks),
+						activeBackground(id.target.id)
+					)}
 				>
 					prosta spółka akcyjna
 				</button>
