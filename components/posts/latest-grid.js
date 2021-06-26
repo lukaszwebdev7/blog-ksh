@@ -1,4 +1,4 @@
-import LatestItem from './latest-item';
+import PostItem from './post-item';
 
 function LatestGrid(props) {
 	const { posts } = props;
@@ -6,7 +6,7 @@ function LatestGrid(props) {
 	return (
 		<div className="flex justify-center">
 			<div className="flex flex-col md:flex-row md:flex-wrap md:justify-around">
-				{posts.map((post) => <LatestItem key={post.slug} post={post} />)}
+				{posts.map((post) => <PostItem key={post.slug} post={post} />)}
 			</div>
 		</div>
 	);

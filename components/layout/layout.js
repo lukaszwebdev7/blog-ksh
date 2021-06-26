@@ -12,7 +12,7 @@ function Layout(props) {
 					<div>
 						<Navigation />
 					</div>
-					<div>
+					<div className="mb-8">
 						<NavigationPosts />
 					</div>
 					<div className="flex-grow">{props.children}</div>

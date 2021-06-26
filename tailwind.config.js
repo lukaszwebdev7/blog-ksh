@@ -14,7 +14,9 @@ module.exports = {
 			coffee: '#AA7642',
 			lightblue: '#2458C4',
 			gold: '#A98A51',
-			black: '#000000'
+			black: '#000000',
+			violet: '#553AA8',
+			'amarant-one': '#BC3E75'
 		}),
 		borderColor: (theme) => ({
 			...theme('colors'),
@@ -23,6 +25,8 @@ module.exports = {
 			black: '#000',
 			gold: '#A98A51',
 			gray: '#333333',
+			violet: '#553AA8',
+			'amarant-one': '#BC3E75',
 			'blue-version': '#233e8b'
 		}),
 		fontFamily: {},
@@ -78,6 +82,7 @@ module.exports = {
 				...theme('colors'),
 				'yellow-box': '#AA7642',
 				'blue-bg': '#011EFF',
+				category: '#E3EBF1',
 				gray: '#333333',
 				white: '#FFFFFF',
 				lightblue: '#2458C4',
