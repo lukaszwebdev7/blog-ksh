@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-function PostItem(props) {
+function LatestItem(props) {
 	const { image, category, date, title, excerpt, slug } = props.post;
 
 	const formattedDate = new Date(date).toLocaleDateString('pl-PL', {
@@ -38,4 +38,4 @@ function PostItem(props) {
 	);
 }
 
-export default PostItem;
+export default LatestItem;

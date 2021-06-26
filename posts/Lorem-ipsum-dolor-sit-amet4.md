@@ -1,6 +1,6 @@
 ---
 date: '2020-12-15'
-category: 'prosta spółka akcyjna'
+category: 'prosta_spolka_akcyjna'
 title: 'Lorem ipsum dolor sit amet cursus consequat'
 excerpt: 'Lorem ipsum dolor sit amet cursus consequat, orci sem tincidunt in, suscipit rutrum. In viverra mattis. Aliquam fermentum rutrum.'
 image: amet4.jpg

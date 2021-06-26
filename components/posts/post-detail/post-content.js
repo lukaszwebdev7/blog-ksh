@@ -1,6 +1,8 @@
 import ReactMarkdown from 'react-markdown';
 import PostHeader from './post-header';
 
+import { useRouter } from 'next/router';
+
 function PostContent(props) {
 	const { post } = props;
 
@@ -12,6 +14,8 @@ function PostContent(props) {
 		year: 'numeric'
 	});
 
+	const router = useRouter();
+
 	return (
 		<div className="flex justify-center text-justify mb-20">
 			<article className="w-11/12 md:w-10/12 lg:w-3/5 2xl:w-1/2">
@@ -19,7 +23,10 @@ function PostContent(props) {
 				<div className="prose max-w-none">
 					<ReactMarkdown>{post.content}</ReactMarkdown>
 				</div>
-				<div className="mt-4">Inne z kategorii {post.category}</div>
+				<button type="button" onClick={() => router.back()}>
+					Powrót do listy postów
+				</button>
+				<div className="mt-4">Inne z tej kategorii: component {post.category}</div>
 			</article>
 		</div>
 	);

@@ -1,6 +1,6 @@
 ---
 date: '2020-11-14'
-category: 'spółka jawna'
+category: 'spolka_jawna'
 title: 'Lorem ipsum dolor sit amet cursus consequat'
 excerpt: 'Lorem ipsum dolor sit amet cursus consequat, orci sem tincidunt in, suscipit rutrum. In viverra mattis. Aliquam fermentum rutrum.'
 image: amet1.jpg

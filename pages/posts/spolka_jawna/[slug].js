@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import PostContent from '../../components/posts/post-detail/post-content';
+import PostContent from '../../../components/posts/post-detail/post-content';
 
-import { getPostsFiles, getPostData } from '../../lib/posts-util';
+import { getPostsFiles, getPostData } from '../../../lib/posts-util';
 
 function SinglePost(props) {
 	return (

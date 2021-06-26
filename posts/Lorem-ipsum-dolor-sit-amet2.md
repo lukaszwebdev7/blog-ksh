@@ -1,6 +1,6 @@
 ---
 date: '2021-04-09'
-category: 'spółka partnerska'
+category: 'spolka_partnerska'
 title: 'Lorem ipsum dolor sit amet cursus consequat'
 excerpt: 'Lorem ipsum dolor sit amet cursus consequat, orci sem tincidunt in, suscipit rutrum. In viverra mattis. Aliquam fermentum rutrum.'
 image: amet2.jpg
