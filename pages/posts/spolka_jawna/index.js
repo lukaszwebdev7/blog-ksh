@@ -9,7 +9,7 @@ function JawnaPostsPage(props) {
 
 	const filteredArray = posts.filter((post) => post.category === 'spolka_jawna');
 
-	const size = 2;
+	const size = 6;
 
 	function chunksMaker() {
 		const result = [];

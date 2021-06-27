@@ -11,7 +11,7 @@ function SectionTwo() {
 							style={{ fontFamily: 'Lobster Two', letterSpacing: '2px' }}
 							className="text-lg sm:text-5xl text-gray font-bold px-2 rounded tracking-wider my-6"
 						>
-							W mojej kancelarii uzyskasz pomoc w zakresie
+							W kancelarii uzyskasz pomoc w zakresie
 						</div>
 
 						<div className="text-md xl:text-xl mb-10 uppercase">

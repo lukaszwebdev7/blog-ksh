@@ -69,7 +69,7 @@ function Navigation() {
 
 					<div className="my-2 md:my-0 mx-4 hover:text-blue-text">
 						<div className={router.pathname == '/posts' ? 'text-blue-version' : ''}>
-							<Link href="/posts">Wpisy</Link>
+							<Link href="/posts">Artykuły</Link>
 						</div>
 					</div>
 

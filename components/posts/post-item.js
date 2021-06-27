@@ -45,13 +45,13 @@ function PostItem(props) {
 							<div
 								className={
 									category === 'spolka_jawna' ? (
-										'border-l-2 border-coffee text-coffee font-bold pl-4 my-2'
+										'border-l-2 border-coffee text-coffee font-bold pl-4 mt-2 mb-4'
 									) : '' || category === 'spolka_partnerska' ? (
-										'border-l-2 border-blue-version text-blue-version font-bold pl-4 my-2'
+										'border-l-2 border-blue-version text-blue-version font-bold pl-4 mt-2 mb-4'
 									) : '' || category === 'spolka_z_o_o' ? (
-										'border-l-2 border-violet text-violet font-bold pl-4 my-2'
+										'border-l-2 border-violet text-violet font-bold pl-4 mt-2 mb-4'
 									) : '' || category === 'prosta_spolka_akcyjna' ? (
-										'border-l-2 border-amarant-one text-amarant-one font-bold pl-4 my-2'
+										'border-l-2 border-amarant-one text-amarant-one font-bold pl-4 mt-2 mb-4'
 									) : (
 										''
 									)
@@ -59,7 +59,7 @@ function PostItem(props) {
 							>
 								{showCategoryInPolish()}
 							</div>
-							<div className="text-base text-gray-75 mb-4">{formattedDate}</div>
+							<div className="text-base text-gray-75">{formattedDate}</div>
 
 							<div className="font-bold mb-6">{title}</div>
 
