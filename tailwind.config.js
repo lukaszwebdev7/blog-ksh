@@ -26,6 +26,7 @@ module.exports = {
 			gold: '#A98A51',
 			gray: '#333333',
 			violet: '#553AA8',
+			white: '#FFFFFF',
 			'amarant-one': '#BC3E75',
 			'blue-version': '#233e8b'
 		}),
@@ -89,7 +90,8 @@ module.exports = {
 				footer: '#003366',
 				gold: '#FFDE59',
 				indigo: '#0D4F8B',
-				black: '#000000'
+				black: '#000000',
+				contact: '#0054A6'
 			}),
 			lineHeight: {
 				'16': '4rem'
