@@ -2,19 +2,19 @@ import Image from 'next/image';
 
 function SectionTwo() {
 	return (
-		<div>
-			<div className="flex justify-center mb-12 sm:mt-20 ">
-				<div className="flex flex-col sm:flex-row w-11/12">
+		<div className="flex justify-center">
+			<div className="w-11/12 md:w-9/12 flex justify-center mb-12 sm:mt-20 ">
+				<div className="flex flex-col md:flex-row ">
 					<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet" />
-					<div className="sm:ml-8 text-justify sm:text-left ">
+					<div className="text-justify md:text-left bg-category px-2">
 						<div
 							style={{ fontFamily: 'Lobster Two', letterSpacing: '2px' }}
-							className="text-lg sm:text-5xl text-gray font-bold px-2 rounded tracking-wider my-6"
+							className="text-lg md:text-3xl xl:text-4xl text-gray font-bold px-2 rounded tracking-wider my-6"
 						>
 							W kancelarii uzyskasz pomoc w zakresie
 						</div>
 
-						<div className="text-md xl:text-xl mb-10 uppercase">
+						<div className="text-base xl:text-xl mb-10 uppercase text-justify">
 							<div className="flex flex-row items-center my-2 p-2 tracking-wide">
 								<div>
 									<div className="mr-10 text-4xl font-bold text-gray">01</div>

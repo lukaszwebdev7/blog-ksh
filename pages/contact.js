@@ -106,7 +106,7 @@ function Contact() {
 
 				<div className="flex justify-center">
 					<iframe
-						className="w-11/12 h-96 sm:w-2/3 xl:w-3/4 rounded"
+						className="w-11/12 h-96 xl:w-3/4 rounded"
 						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9810.170077927241!2d21.0258568!3d52.0698532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa67a08caf618d01a!2sRadca%20Prawny%20%C5%81ukasz%20Szczepaniak%20Kancelaria%20Radcy%20Prawnego!5e0!3m2!1spl!2spl!4v1603645233912!5m2!1spl!2spl"
 						width="1200"
 						height="600"

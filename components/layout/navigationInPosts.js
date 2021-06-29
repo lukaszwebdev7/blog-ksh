@@ -54,6 +54,36 @@ function NavigationPosts() {
 						<span className="block py-3 px-4 cursor-pointer">spółka partnerska</span>
 					</Link>
 				</div>
+				<div
+					style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+					className={
+						router.pathname === '/posts/spolka_z_o_o' ||
+						router.pathname === '/posts/spolka_z_o_o/[slug]' ? (
+							'bg-category'
+						) : (
+							'bg-white'
+						)
+					}
+				>
+					<Link href="/posts/spolka_z_o_o">
+						<span className="block py-3 px-4 cursor-pointer">spółka z o.o.</span>
+					</Link>
+				</div>
+				<div
+					style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+					className={
+						router.pathname === '/posts/prosta_spolka_akcyjna' ||
+						router.pathname === '/posts/prosta_spolka_akcyjna/[slug]' ? (
+							'bg-category'
+						) : (
+							'bg-white'
+						)
+					}
+				>
+					<Link href="/posts/prosta_spolka_akcyjna">
+						<span className="block py-3 px-4 cursor-pointer">prosta spółka akcyjna</span>
+					</Link>
+				</div>
 			</div>
 		</div>
 	);
