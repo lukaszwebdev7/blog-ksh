@@ -3,7 +3,7 @@ import SectionTwo from '../components/home-page/section-two';
 function About() {
 	return (
 		<div>
-			<div className="flex justify-center">
+			<div className="flex justify-center mb-32">
 				<div className="flex flex-col sm:flex-row w-9/12">
 					<div className="sm:w-1/3">
 						<img src="/images/other/lukasz.jpg" alt="zdjęcie-lukasz" className="rounded" />

@@ -1,9 +1,7 @@
-import Image from 'next/image';
-
 function SectionTwo() {
 	return (
 		<div className="flex justify-center">
-			<div className="w-11/12 md:w-9/12 flex justify-center mb-12 sm:mt-20 ">
+			<div className="w-11/12 md:w-9/12 flex justify-center mb-12 ">
 				<div className="flex flex-col md:flex-row ">
 					<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet" />
 					<div className="text-justify md:text-left bg-category px-2">

@@ -1,3 +1,5 @@
+import PhotoSlider from '../components/home-page/slider';
+
 function Contact() {
 	return (
 		<div>

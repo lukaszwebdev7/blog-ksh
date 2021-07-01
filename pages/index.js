@@ -1,8 +1,7 @@
 import Head from 'next/head';
 import SectionOne from '../components/home-page/section-one';
 import SectionTwo from '../components/home-page/section-two';
-import SectionThree from '../components/home-page/section-three';
-
+import PhotoSlider from '../components/home-page/slider';
 import LatestPosts from '../components/home-page/latest-posts';
 
 import { getLatestPosts } from '../lib/posts-util';
@@ -21,9 +20,8 @@ function HomePage(props) {
 
 			<LatestPosts posts={props.posts} />
 			<SectionOne />
+			<PhotoSlider />
 			<SectionTwo />
-
-			<SectionThree posts={props.posts} />
 		</div>
 	);
 }

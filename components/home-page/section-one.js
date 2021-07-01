@@ -1,6 +1,6 @@
 function SectionOne() {
 	return (
-		<div className="flex justify-center mt-20">
+		<div className="flex justify-center mt-20 mb-32">
 			<div className="w-11/12 md:w-3/4 flex flex-col md:flex-row items-center md:border-2 md:border-gold">
 				<div>
 					<img src="/images/other/part1.jpg" alt="" />
