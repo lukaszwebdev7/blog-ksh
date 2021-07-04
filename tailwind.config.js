@@ -91,7 +91,8 @@ module.exports = {
 				gold: '#FFDE59',
 				indigo: '#0D4F8B',
 				black: '#000000',
-				contact: '#0054A6'
+				contact: '#0054A6',
+				slides: '#EDF0F2'
 			}),
 			lineHeight: {
 				'16': '4rem'

@@ -20,8 +20,8 @@ function HomePage(props) {
 
 			<LatestPosts posts={props.posts} />
 			<SectionOne />
-			<PhotoSlider />
 			<SectionTwo />
+			<PhotoSlider />
 		</div>
 	);
 }

@@ -15,8 +15,8 @@ function SectionTwo() {
 						<div className="text-base xl:text-xl mb-10 uppercase text-justify">
 							<div className="flex flex-row items-center my-2 p-2 tracking-wide">
 								<div>
-									<div className="mr-10 text-4xl font-bold text-gray">01</div>
-									<div className="h-1 w-12 bg-gray" />
+									<div className="mr-8 md:mr-10 text-xl md:text-4xl font-bold text-gray">01</div>
+									<div className="h-1 w-8 md:w-12 bg-gray" />
 								</div>
 								<div>
 									sporządzania umów spółek osobowych i kapitałowych oraz wszelkich dokumentów
@@ -25,8 +25,8 @@ function SectionTwo() {
 							</div>
 							<div className="flex flex-row items-center my-2 p-2 tracking-wide">
 								<div>
-									<div className="mr-10 text-4xl font-bold text-gray">02</div>
-									<div className="h-1 w-12 bg-gray" />
+									<div className="mr-8 md:mr-10 text-xl md:text-4xl font-bold text-gray">02</div>
+									<div className="h-1 w-8 md:w-12 bg-gray" />
 								</div>
 								<div>
 									opracowania dokumentów do przeprowadzenia zmian umów spółek w zakresie: przedmiotu
@@ -36,15 +36,15 @@ function SectionTwo() {
 							</div>
 							<div className="flex flex-row items-center my-2 p-2 tracking-wide">
 								<div>
-									<div className="mr-10 text-4xl font-bold text-gray">03</div>
-									<div className="h-1 w-12 bg-gray" />
+									<div className="mr-8 md:mr-10 text-xl md:text-4xl font-bold text-gray">03</div>
+									<div className="h-1 w-8 md:w-12 bg-gray" />
 								</div>
 								<div>sporządzania umów zbycia udziałów</div>
 							</div>
 							<div className="flex flex-row items-center my-2 p-2 tracking-wide">
 								<div>
-									<div className="mr-10 text-4xl font-bold text-gray">04</div>
-									<div className="h-1 w-12 bg-gray" />
+									<div className="mr-8 md:mr-10 text-xl md:text-4xl font-bold text-gray">04</div>
+									<div className="h-1 w-8 md:w-12 bg-gray" />
 								</div>
 								<div>
 									przygotowania dokumentów na zebrania wspólników spółek osobowych i zgromadzenia
@@ -54,15 +54,15 @@ function SectionTwo() {
 							</div>
 							<div className="flex flex-row items-center my-2 p-2 tracking-wide">
 								<div>
-									<div className="mr-10 text-4xl font-bold text-gray">05</div>
-									<div className="h-1 w-12 bg-gray" />
+									<div className="mr-8 md:mr-10 text-xl md:text-4xl font-bold text-gray">05</div>
+									<div className="h-1 w-8 md:w-12 bg-gray" />
 								</div>
 								<div>sporządzania dokumentów na potrzeby likwidacji spółki</div>
 							</div>
 							<div className="flex flex-row items-center my-2 p-2 tracking-wide">
 								<div>
-									<div className="mr-10 text-4xl font-bold text-gray">06</div>
-									<div className="h-1 w-12 bg-gray" />
+									<div className="mr-8 md:mr-10 text-xl md:text-4xl font-bold text-gray">06</div>
+									<div className="h-1 w-8 md:w-12 bg-gray" />
 								</div>
 								<div>
 									przygotowania formularzy i dokumentów składanych do Krajowego Rejestru Sądowego w
@@ -70,10 +70,10 @@ function SectionTwo() {
 									sądami rejestrowymi
 								</div>
 							</div>
-							<div className="flex flex-row items-centermy-2 p-2 tracking-wide">
+							<div className="flex flex-row items-center my-2 p-2 tracking-wide">
 								<div>
-									<div className="mr-10 text-4xl font-bold text-gray">07</div>
-									<div className="h-1 w-12 bg-gray" />
+									<div className="mr-8 md:mr-10 text-xl md:text-4xl font-bold text-gray">07</div>
+									<div className="h-1 w-8 md:w-12 bg-gray" />
 								</div>
 								<div>
 									zapewnienia wsparcia przy przesyłaniu dokumentów do Krajowego Rejestru Sądowego z
