@@ -109,7 +109,7 @@ function PhotoSlider() {
 
 			<div className="hidden md:block w-11/12 xl:w-10/12 mb-16 md:mb-32 relative">
 				<button
-					className="absolute top:20 md:top-80 xl:top-96 left-4 text-white"
+					className="absolute top:20 md:top-80 xl:top-96 left-2 text-white"
 					onClick={() => photoHandlerLeft()}
 				>
 					<svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
@@ -121,7 +121,7 @@ function PhotoSlider() {
 					</svg>
 				</button>
 				<button
-					className="absolute top:20 md:top-80 xl:top-96 right-4 text-white"
+					className="absolute top:20 md:top-80 xl:top-96 right-2 text-white"
 					onClick={() => photoHandlerRight()}
 				>
 					<svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">

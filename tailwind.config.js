@@ -92,7 +92,7 @@ module.exports = {
 				indigo: '#0D4F8B',
 				black: '#000000',
 				contact: '#0054A6',
-				slides: '#EDF0F2'
+				mailForm: '#EDF0F2'
 			}),
 			lineHeight: {
 				'16': '4rem'
