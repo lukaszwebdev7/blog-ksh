@@ -1,34 +1,33 @@
-let nodemailer = require('nodemailer')
-    
-export default function (req, res) {
-  require('dotenv').config()
+let nodemailer = require('nodemailer');
 
- 
-  const transporter = nodemailer.createTransport({
-    port: 465,     
-    host: "smtp.gmail.com",
-       auth: {
-            user: 'lukaszkowalsky488@gmail.com',
-            pass: process.env.password,
-         },
-    secure: true,
-  });
-  
-  const mailData = {
-      from: 'lukaszkowalsky488@gmail.com',
-      to: 'lukasz.webdev7@gmail.com',
-      subject: `Message From ${req.body.name}`,
-      text: req.body.message + " | Sent from: " + req.body.email,
-      html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`
-  }
+export default function(req, res) {
+	require('dotenv').config();
 
-  transporter.sendMail(mailData, function (err, info) {
-      if(err)
-        console.log(err)
-      else
-        console.log(info);
-  })
+	console.log(req.body);
 
-  console.log(req.body)
-  res.send('success')
-}  
+	const transporter = nodemailer.createTransport({
+		port: 465,
+		host: 'poczta.interia.pl',
+		auth: {
+			user: 'lukasz_123sz@interia.pl',
+			pass: process.env.password
+		},
+		secure: true
+	});
+
+	const mailData = {
+		from: 'lukasz_123sz@interia.pl',
+		to: 'zen_24@wp.pl',
+		subject: `Message From ${req.body.name}`,
+		text: req.body.message + ' | Sent from: ' + req.body.email,
+		html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`
+	};
+
+	transporter.sendMail(mailData, function(err, info) {
+		if (err) console.log(err);
+		else console.log(info);
+	});
+
+	console.log(req.body);
+	res.send('success');
+}

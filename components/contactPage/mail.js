@@ -27,10 +27,14 @@ function SendMessage() {
 			console.log('Response received');
 			if (res.status === 200) {
 				console.log('Response succeeded!');
+
 				setSubmitted(true);
 				setName('');
 				setEmail('');
 				setMessage('');
+				document.getElementById('name').value = '';
+				document.getElementById('email').value = '';
+				document.getElementById('message').value = '';
 			}
 		});
 	};
@@ -48,6 +52,7 @@ function SendMessage() {
 									setName(e.target.value);
 								}}
 								name="name"
+								id="name"
 								class="border-2 rounded px-3 py-1 w-full focus:border-indigo-400 input"
 							/>
 						</div>
@@ -59,6 +64,7 @@ function SendMessage() {
 									setEmail(e.target.value);
 								}}
 								name="email"
+								id="email"
 								class="border-2 rounded px-3 py-1 w-full focus:border-indigo-400 input"
 							/>
 						</div>
