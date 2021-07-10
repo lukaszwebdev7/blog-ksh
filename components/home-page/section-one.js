@@ -1,9 +1,9 @@
 function SectionOne() {
 	return (
-		<div className="flex justify-center mt-20 mb-16 md:mb-32">
+		<div className="flex justify-center mt-6 md:mt-20 mb-8 md:mb-32">
 			<div className="sm:hidden w-11/12 ">
 				<div className="">
-					<img src="/images/mobile/umowa.png" alt="" />
+					<img src="/images/mobile/umowa.jpg" alt="" />
 				</div>
 			</div>
 

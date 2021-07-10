@@ -5,7 +5,7 @@ function LatestGrid(props) {
 
 	return (
 		<div className="flex justify-center">
-			<div className="flex flex-col md:flex-row md:flex-wrap md:justify-around">
+			<div className="xl:w-10/12 flex flex-col md:flex-row md:flex-wrap md:justify-around">
 				{posts.map((post) => <PostItem key={post.slug} post={post} />)}
 			</div>
 		</div>

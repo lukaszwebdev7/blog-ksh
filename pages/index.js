@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from '../components/home-page/header';
 import SectionOne from '../components/home-page/section-one';
 import SectionTwo from '../components/home-page/section-two';
 import PhotoSlider from '../components/home-page/slider';
@@ -18,9 +19,9 @@ function HomePage(props) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
+			<Header />
 			<LatestPosts posts={props.posts} />
 			<SectionOne />
-			<SectionTwo />
 			<PhotoSlider />
 		</div>
 	);
