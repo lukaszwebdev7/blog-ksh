@@ -2,11 +2,11 @@ function SectionOne() {
 	return (
 		<div className="flex justify-center mb-12 md:mb-32">
 			<div className="flex flex-col sm:flex-row w-11/12 md:w-9/12">
-				<div className="sm:w-1/3 lg:flex">
+				<div className="sm:w-1/3">
 					<img src="/images/other/lukasz.jpg" alt="zdjęcie-lukasz" className="rounded" />
 				</div>
 				<div className="sm:w-2/3 sm:pl-20 mt-6 sm:mt-0 ">
-					<div className="flex justify-center w-full bg-orange-about xl:h-full p-6">
+					<div className="flex justify-center w-full xl:h-full p-6">
 						<div className="flex flex-col w-11/12 lg:w-full text-justify lg:text-base xl:text-xl tracking-wide">
 							<div className="mb-2 font-bold">Łukasz Szczepaniak</div>
 							<div className="uppercase mb-8">radca prawny</div>

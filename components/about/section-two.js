@@ -16,7 +16,7 @@ function SectionTwo() {
 						/>
 
 						<div className="text-justify md:text-left bg-category px-2">
-							<div className="text-base xl:text-xl mb-10 md:uppercase text-justify">
+							<div className="text-base xl:text-xl mb-10 text-justify">
 								<div className="flex flex-row items-center my-2 p-2 tracking-wide">
 									<div>
 										<div className="mr-8 md:mr-10 text-xl md:text-4xl font-bold text-gray">01</div>
