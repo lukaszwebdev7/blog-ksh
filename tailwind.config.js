@@ -83,6 +83,7 @@ module.exports = {
 				...theme('colors'),
 				'yellow-box': '#AA7642',
 				'blue-bg': '#011EFF',
+				'orange-about': '#F9C374',
 				category: '#E3EBF1',
 				gray: '#333333',
 				white: '#FFFFFF',

@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Header from '../components/home-page/header';
 import SectionOne from '../components/home-page/section-one';
-import SectionTwo from '../components/home-page/section-two';
 import PhotoSlider from '../components/home-page/slider';
 import LatestPosts from '../components/home-page/latest-posts';
 
