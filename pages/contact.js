@@ -1,5 +1,6 @@
 import AddressData from '../components/contactPage/main';
 import SendMessage from '../components/contactPage/mail';
+import FacebookMessenger from '../components/contactPage/messengerF';
 
 function Contact() {
 	return (
@@ -14,6 +15,7 @@ function Contact() {
 				<span className="block h-1 w-20 bg-indigo" />
 			</div>
 			<SendMessage />
+			<FacebookMessenger />
 			<div className="w-full flex flex-col justify-center md:mb-24">
 				<div className="flex justify-center text-center mb-2">
 					<p
