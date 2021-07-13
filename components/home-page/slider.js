@@ -79,7 +79,7 @@ function PhotoSlider() {
 					<img src="/images/mobile/ask.png" />
 				</div>
 				<div className="flex justify-center">
-					<div className="w-11/12 xl:w-10/12 mb-16 md:mb-32 relative">
+					<div className="w-11/12 xl:w-10/12 mb-20 md:mb-32 relative">
 						<button
 							className="absolute top:20 md:top-80 xl:top-96 left-4 text-white"
 							onClick={() => photoHandlerLeftMobile()}

@@ -17,7 +17,7 @@ function NavigationPosts() {
 			<div className="flex flex-col md:flex-row">
 				<div className="py-3 px-4 font-bold">Filtrowanie: </div>
 				<div
-					style={{ marginLeft: '20px', marginRight: '10px', borderRadius: '5px' }}
+					style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
 					className={router.pathname === '/posts' ? 'bg-category' : 'bg-white'}
 				>
 					<Link href="/posts">

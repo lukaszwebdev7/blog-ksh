@@ -18,7 +18,7 @@ function AllPostsPage(props) {
 	const arrays = chunksMaker();
 
 	return (
-		<ul className="mb-32">
+		<ul className="mb-16 md:mb-32">
 			<Chunks posts={posts} arrays={arrays} />
 		</ul>
 	);

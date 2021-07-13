@@ -6,8 +6,8 @@ function SectionOne() {
 					<img src="/images/other/lukasz.jpg" alt="zdjęcie-lukasz" className="rounded" />
 				</div>
 				<div className="sm:w-2/3 sm:pl-20 mt-6 sm:mt-0 ">
-					<div className="flex justify-center w-full xl:h-full p-6">
-						<div className="flex flex-col w-11/12 lg:w-full text-justify lg:text-base xl:text-xl tracking-wide">
+					<div className="flex justify-center w-full xl:h-full md:p-6">
+						<div className="flex flex-col md:w-11/12 lg:w-full text-justify lg:text-base xl:text-xl tracking-wide">
 							<div className="mb-2 font-bold">Łukasz Szczepaniak</div>
 							<div className="uppercase mb-8">radca prawny</div>
 							<div className="mb-2 ">

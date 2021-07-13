@@ -91,6 +91,7 @@ module.exports = {
 				'orange-about': '#F9C374',
 				category: '#E3EBF1',
 				gray: '#333333',
+				'gray-one': '#4B5563',
 				white: '#FFFFFF',
 				lightblue: '#2458C4',
 				footer: '#003366',

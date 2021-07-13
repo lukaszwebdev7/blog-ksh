@@ -1,6 +1,6 @@
 function Header() {
 	return (
-		<div className="flex justify-center mt-20 mb-16 md:mb-32">
+		<div className="flex justify-center mb-16 md:mb-20">
 			<div className="sm:hidden w-11/12 ">
 				<div className="">
 					<img src="/images/mobile/header.jpg" alt="" />

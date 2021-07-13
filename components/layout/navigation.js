@@ -4,6 +4,8 @@ import { useRouter } from 'next/router';
 function Navigation() {
 	const router = useRouter();
 
+	const active = 'bg-black md:bg-white text-white md:text-black md:text-blue-version';
+
 	return (
 		<div className="flex flex-col md:flex-row sm:justify-between">
 			<div className="flex items-center justify-between pr-5 sm:ml-12 xl:ml-10">
@@ -45,9 +47,9 @@ function Navigation() {
 			</div>
 
 			<div className="flex flex-row items-center md:justify-end font-bold text-xl xl:text-2xl">
-				<div className="burger flex flex-col md:flex-row">
-					<div className="mb-2 md:mb-0 mx-4 cursor-pointer hover:text-blue-text">
-						<div className={router.pathname == '/' ? 'text-blue-version' : ''}>
+				<div className="w-full burger flex flex-col md:flex-row tracking-wider">
+					<div className="mx-2 md:mx-4 cursor-pointer md:hover:text-blue-text">
+						<div style={{ padding: '6px 0 6px 6px' }} className={router.pathname == '/' ? active : ''}>
 							<Link href="/">
 								<svg
 									className="w-6 h-6 sm:w-8 sm:h-8"
@@ -59,7 +61,7 @@ function Navigation() {
 									<path
 										strokeLinecap="round"
 										strokeLinejoin="round"
-										strokeWidth="2"
+										strokeWidth="3"
 										d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
 									/>
 								</svg>
@@ -67,20 +69,23 @@ function Navigation() {
 						</div>
 					</div>
 
-					<div className="my-2 md:my-0 mx-4 hover:text-blue-text">
-						<div className={router.pathname == '/posts' ? 'text-blue-version' : ''}>
+					<div className="mx-2 md:mx-4 md:hover:text-blue-text">
+						<div style={{ padding: '6px 0 6px 6px' }} className={router.pathname == '/posts' ? active : ''}>
 							<Link href="/posts">Artykuły</Link>
 						</div>
 					</div>
 
-					<div className="my-2 md:my-0 mx-4 hover:text-blue-text">
-						<div className={router.pathname == '/about' ? 'text-blue-version' : ''}>
+					<div className="mx-2 md:mx-4 md:hover:text-blue-text">
+						<div style={{ padding: '6px 0 6px 6px' }} className={router.pathname == '/about' ? active : ''}>
 							<Link href="/about">Kancelaria</Link>
 						</div>
 					</div>
 
-					<div className="my-2 md:my-0 mx-4 hover:text-blue-text">
-						<div className={router.pathname == '/contact' ? 'text-blue-version' : ''}>
+					<div className="mx-2 md:mx-4 md:hover:text-blue-text">
+						<div
+							style={{ padding: '6px 0 6px 6px' }}
+							className={router.pathname == '/contact' ? active : ''}
+						>
 							<Link href="/contact">Kontakt</Link>
 						</div>
 					</div>

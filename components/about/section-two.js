@@ -3,12 +3,12 @@ function SectionTwo() {
 		<div>
 			<div
 				style={{ fontFamily: 'Lobster Two', letterSpacing: '2px' }}
-				className="text-lg md:text-3xl xl:text-4xl text-gray font-bold px-2 rounded tracking-wider mb-12"
+				className="md:ml-20 xl:ml-28 text-lg md:text-3xl xl:text-4xl text-gray font-bold px-2 rounded tracking-wider mb-12"
 			>
-				W kancelarii uzyskasz pomoc w zakresie
+				W kancelarii uzyskasz pomoc w zakresie:
 			</div>
 			<div className="flex justify-center">
-				<div className="w-11/12 md:w-9/12 flex justify-center mb-12 ">
+				<div className="w-11/12 md:w-9/12 flex justify-center mb-20 md:mb-32">
 					<div className="flex flex-col md:flex-row ">
 						<link
 							href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap"
