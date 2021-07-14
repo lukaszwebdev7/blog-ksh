@@ -8,7 +8,7 @@ function Header() {
 			</div>
 
 			<div className="hidden sm:block flex justify-center ">
-				<div className="md:w-10/12 m-auto">
+				<div className="sm:w-10/12 m-auto">
 					<img className="" src="/images/other/header.png" alt="" />
 				</div>
 			</div>

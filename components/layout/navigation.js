@@ -4,21 +4,21 @@ import { useRouter } from 'next/router';
 function Navigation() {
 	const router = useRouter();
 
-	const active = 'bg-black md:bg-white text-white md:text-black md:text-blue-version';
+	const active = 'bg-black md:bg-white text-white md:text-black md:text-coffee';
 
 	return (
 		<div className="flex flex-col md:flex-row sm:justify-between">
 			<div className="flex items-center justify-between pr-5 sm:ml-12 xl:ml-10">
-				<div className="-ml-4">
+				<div className="-ml-8 sm:-ml-20 sm:pl-2 cursor-pointer">
 					<a>
 						<Link href="/">
-							<img className="h-24 xl:h-32" src="" alt="logo" />
+							<img className="h-24 xl:h-32" src="/images/other/logo.png" alt="logo" />
 						</Link>
 					</a>
 				</div>
 				<div className="md:hidden">
 					<button
-						className="lg:hidden"
+						className="md:hidden"
 						onClick={() => {
 							const burger = document.querySelector('.burger');
 							const menu = document.querySelector('.menu');
@@ -48,7 +48,7 @@ function Navigation() {
 
 			<div className="flex flex-row items-center md:justify-end font-bold text-xl xl:text-2xl">
 				<div className="w-full burger flex flex-col md:flex-row tracking-wider">
-					<div className="mx-2 md:mx-4 cursor-pointer md:hover:text-blue-text">
+					<div className="mx-2 md:mx-4 cursor-pointer md:hover:text-gray-75 delay-200">
 						<div style={{ padding: '6px 0 6px 6px' }} className={router.pathname == '/' ? active : ''}>
 							<Link href="/">
 								<svg
@@ -69,19 +69,19 @@ function Navigation() {
 						</div>
 					</div>
 
-					<div className="mx-2 md:mx-4 md:hover:text-blue-text">
+					<div className="mx-2 md:mx-4 md:hover:text-gray-75 delay-200">
 						<div style={{ padding: '6px 0 6px 6px' }} className={router.pathname == '/posts' ? active : ''}>
 							<Link href="/posts">Artykuły</Link>
 						</div>
 					</div>
 
-					<div className="mx-2 md:mx-4 md:hover:text-blue-text">
+					<div className="mx-2 md:mx-4 md:hover:text-gray-75 delay-200">
 						<div style={{ padding: '6px 0 6px 6px' }} className={router.pathname == '/about' ? active : ''}>
 							<Link href="/about">Kancelaria</Link>
 						</div>
 					</div>
 
-					<div className="mx-2 md:mx-4 md:hover:text-blue-text">
+					<div className="mx-2 md:mx-4 md:hover:text-gray-75 delay-200">
 						<div
 							style={{ padding: '6px 0 6px 6px' }}
 							className={router.pathname == '/contact' ? active : ''}

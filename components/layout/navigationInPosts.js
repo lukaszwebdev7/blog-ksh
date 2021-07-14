@@ -7,15 +7,18 @@ function NavigationPosts() {
 	return (
 		<div
 			className={
-				router.pathname === '/' || router.pathname === '/about' || router.pathname === '/contact' ? (
+				router.pathname === '/' ||
+				router.pathname === '/about' ||
+				router.pathname === '/contact' ||
+				router.pathname === '/polityka' ? (
 					'hidden'
 				) : (
 					'block'
 				)
 			}
 		>
-			<div className="flex flex-col md:flex-row">
-				<div className="py-3 px-4 font-bold">Filtrowanie: </div>
+			<div className="flex flex-col md:flex-row md:mt-4">
+				<div className="py-3 px-4 font-bold md:ml-4">Filtrowanie: </div>
 				<div
 					style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
 					className={router.pathname === '/posts' ? 'bg-category' : 'bg-white'}

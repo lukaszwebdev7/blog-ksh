@@ -74,12 +74,12 @@ function PhotoSlider() {
 
 	return (
 		<div className="">
-			<div className="md:hidden flex flex-col justify-center">
+			<div className="lg:hidden flex flex-col justify-center">
 				<div className="flex justify-center">
 					<img src="/images/mobile/ask.png" />
 				</div>
 				<div className="flex justify-center">
-					<div className="w-11/12 xl:w-10/12 mb-20 md:mb-32 relative">
+					<div className="w-11/12 sm:w-10/12 lg:w-11/12 xl:w-10/12 mb-20 md:mb-32 relative">
 						<button
 							className="absolute top:20 md:top-80 xl:top-96 left-4 text-white"
 							onClick={() => photoHandlerLeftMobile()}
@@ -124,7 +124,7 @@ function PhotoSlider() {
 				</div>
 			</div>
 
-			<div className="hidden md:block flex justify-center">
+			<div className="hidden lg:block flex justify-center">
 				<div className="flex flex-row md:w-10/12 xl:w-3/4 m-auto">
 					<div className="h-96 w-96 md:mr-10 xl:mr-0">
 						<img src="/images/other/ask.png" />

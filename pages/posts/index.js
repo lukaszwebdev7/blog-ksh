@@ -18,9 +18,11 @@ function AllPostsPage(props) {
 	const arrays = chunksMaker();
 
 	return (
-		<ul className="mb-16 md:mb-32">
-			<Chunks posts={posts} arrays={arrays} />
-		</ul>
+		<div className="flex justify-center">
+			<ul className="w-10/12 mb-16 md:mb-32">
+				<Chunks posts={posts} arrays={arrays} />
+			</ul>
+		</div>
 	);
 }
 

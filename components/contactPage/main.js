@@ -1,7 +1,7 @@
 function AddressData() {
 	return (
 		<div className="flex justify-center mb-20">
-			<div className="w-11/12 xl:w-3/4 flex flex-col sm:flex-row sm:justify-around bg-indigo sm:py-10 text-white">
+			<div className="w-11/12 md:w-10/12 xl:w-2/3 flex flex-col sm:flex-row sm:justify-around bg-indigo sm:py-10 text-white">
 				<div className="md:w-1/4 flex justify-center">
 					<div className="flex flex-col text-center">
 						<div className="flex justify-center my-4">

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Header from '../components/home-page/header';
-import SectionOne from '../components/home-page/section-one';
+import Company from '../components/home-page/company';
 import PhotoSlider from '../components/home-page/slider';
 import LatestPosts from '../components/home-page/latest-posts';
 
@@ -20,7 +20,7 @@ function HomePage(props) {
 
 			<Header />
 			<LatestPosts posts={props.posts} />
-			<SectionOne />
+			<Company />
 			<PhotoSlider />
 		</div>
 	);

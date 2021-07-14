@@ -1,4 +1,4 @@
-function SectionOne() {
+function Company() {
 	return (
 		<div className="flex justify-center mt-6 md:mt-20 mb-2 md:mb-32">
 			<div className="sm:hidden w-11/12 border-2 border-gold p-4">
@@ -16,4 +16,4 @@ function SectionOne() {
 	);
 }
 
-export default SectionOne;
+export default Company;

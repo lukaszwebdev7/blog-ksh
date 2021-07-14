@@ -26,8 +26,8 @@ function ZooPostsPage(props) {
 	const [ chosenArray, setChosenArray ] = useState(firstArray);
 
 	return (
-		<div>
-			<ul className="flex flex-col lg:flex-row lg:flex-wrap lg:justify-around">
+		<div className="">
+			<ul className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-around mb-16 md:mb-32">
 				{chosenArray.map((post) => <PostItem key={post.slug} post={post} />)}
 			</ul>
 			<div className="flex justify-center">

@@ -14,7 +14,7 @@ function Chunks(props) {
 
 	return (
 		<div>
-			<ul className="flex flex-col sm:flex-row sm:flex-wrap lg:justify-around">
+			<ul className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-around">
 				{chosenArray.map((post) => <PostItem key={post.slug} post={post} />)}
 			</ul>
 			<div className="flex justify-center">
