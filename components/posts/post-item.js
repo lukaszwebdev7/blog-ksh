@@ -32,7 +32,7 @@ function PostItem(props) {
 	return (
 		<div className="sm:w-2/5 lg:w-1/4 mx-4">
 			<ul className="flex justify-center ">
-				<article className="sm:w-3/4 md:w-full mb-10">
+				<article className=" md:w-full mb-10">
 					<Link href={linkPath}>
 						<a>
 							<Image className="temporary" src={imagePath} alt={title} width={800} height={400} />
