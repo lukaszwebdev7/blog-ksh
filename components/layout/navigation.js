@@ -70,7 +70,24 @@ function Navigation() {
 					</div>
 
 					<div className="mx-2 md:mx-4 md:hover:text-gray-75 delay-200">
-						<div style={{ padding: '6px 0 6px 6px' }} className={router.pathname == '/posts' ? active : ''}>
+						<div
+							style={{ padding: '6px 0 6px 6px' }}
+							className={
+								router.pathname == '/posts' ||
+								router.pathname == '/posts/spolka_jawna' ||
+								router.pathname == '/posts/spolka_jawna/[slug]' ||
+								router.pathname == '/posts/spolka_partnerska' ||
+								router.pathname == '/posts/spolka_partnerska/[slug]' ||
+								router.pathname == '/posts/spolka_z_o_o' ||
+								router.pathname == '/posts/spolka_z_o_o/[slug]' ||
+								router.pathname == '/posts/prosta_spolka_akcyjna' ||
+								router.pathname == '/posts/prosta_spolka_akcyjna/[slug]' ? (
+									active
+								) : (
+									''
+								)
+							}
+						>
 							<Link href="/posts">Artykuły</Link>
 						</div>
 					</div>

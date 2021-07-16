@@ -17,75 +17,206 @@ function NavigationPosts() {
 				)
 			}
 		>
-			<div className="flex flex-col md:flex-row md:mt-4">
+			<div className="flex flex-col lg:flex-row md:mt-4">
 				<div className="py-3 px-4 font-bold md:ml-4">Filtrowanie: </div>
-				<div
-					style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
-					className={router.pathname === '/posts' ? 'bg-category' : 'bg-white'}
-				>
-					<Link href="/posts">
-						<span className="block py-3 px-4 cursor-pointer">wszystkie</span>
-					</Link>
+
+				<div className="sm:hidden lg:block">
+					<div className="flex flex-col lg:flex-row ">
+						<div
+							style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+							className={router.pathname === '/posts' ? 'bg-category' : 'bg-white'}
+						>
+							<Link href="/posts">
+								<span className="block py-3 px-4 cursor-pointer">wszystkie</span>
+							</Link>
+						</div>
+						<div
+							style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+							className={
+								router.pathname === '/posts/spolka_jawna' ||
+								router.pathname === '/posts/spolka_jawna/[slug]' ? (
+									'bg-category'
+								) : (
+									'bg-white'
+								)
+							}
+						>
+							<Link href="/posts/spolka_jawna">
+								<span className="block py-3 px-4 cursor-pointer">spółka jawna</span>
+							</Link>
+						</div>
+						<div
+							style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+							className={
+								router.pathname === '/posts/spolka_partnerska' ||
+								router.pathname === '/posts/spolka_partnerska/[slug]' ? (
+									'bg-category'
+								) : (
+									'bg-white'
+								)
+							}
+						>
+							<Link href="/posts/spolka_partnerska">
+								<span className="block py-3 px-4 cursor-pointer">spółka partnerska</span>
+							</Link>
+						</div>
+						<div
+							style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+							className={
+								router.pathname === '/posts/spolka_z_o_o' ||
+								router.pathname === '/posts/spolka_z_o_o/[slug]' ? (
+									'bg-category'
+								) : (
+									'bg-white'
+								)
+							}
+						>
+							<Link href="/posts/spolka_z_o_o">
+								<span className="block py-3 px-4 cursor-pointer">spółka z o.o.</span>
+							</Link>
+						</div>
+						<div
+							style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+							className={
+								router.pathname === '/posts/prosta_spolka_akcyjna' ||
+								router.pathname === '/posts/prosta_spolka_akcyjna/[slug]' ? (
+									'bg-category'
+								) : (
+									'bg-white'
+								)
+							}
+						>
+							<Link href="/posts/prosta_spolka_akcyjna">
+								<span className="block py-3 px-4 cursor-pointer">prosta spółka akcyjna</span>
+							</Link>
+						</div>
+					</div>
 				</div>
-				<div
-					style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
-					className={
-						router.pathname === '/posts/spolka_jawna' ||
-						router.pathname === '/posts/spolka_jawna/[slug]' ? (
-							'bg-category'
-						) : (
-							'bg-white'
-						)
-					}
-				>
-					<Link href="/posts/spolka_jawna">
-						<span className="block py-3 px-4 cursor-pointer">spółka jawna</span>
-					</Link>
-				</div>
-				<div
-					style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
-					className={
-						router.pathname === '/posts/spolka_partnerska' ||
-						router.pathname === '/posts/spolka_partnerska/[slug]' ? (
-							'bg-category'
-						) : (
-							'bg-white'
-						)
-					}
-				>
-					<Link href="/posts/spolka_partnerska">
-						<span className="block py-3 px-4 cursor-pointer">spółka partnerska</span>
-					</Link>
-				</div>
-				<div
-					style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
-					className={
-						router.pathname === '/posts/spolka_z_o_o' ||
-						router.pathname === '/posts/spolka_z_o_o/[slug]' ? (
-							'bg-category'
-						) : (
-							'bg-white'
-						)
-					}
-				>
-					<Link href="/posts/spolka_z_o_o">
-						<span className="block py-3 px-4 cursor-pointer">spółka z o.o.</span>
-					</Link>
-				</div>
-				<div
-					style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
-					className={
-						router.pathname === '/posts/prosta_spolka_akcyjna' ||
-						router.pathname === '/posts/prosta_spolka_akcyjna/[slug]' ? (
-							'bg-category'
-						) : (
-							'bg-white'
-						)
-					}
-				>
-					<Link href="/posts/prosta_spolka_akcyjna">
-						<span className="block py-3 px-4 cursor-pointer">prosta spółka akcyjna</span>
-					</Link>
+
+				<div className="hidden sm:block lg:hidden ">
+					<div className="flex flex-row flex-wrap text-center justify-around">
+						<div className="w-1/3">
+							<div
+								style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+								className={router.pathname === '/posts' ? 'bg-category' : 'bg-white'}
+							>
+								<Link href="/posts">
+									<span className="block py-3 px-4 cursor-pointer">wszystkie</span>
+								</Link>
+							</div>
+						</div>
+
+						<div className="w-1/3">
+							<div
+								style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+								className={
+									router.pathname === '/posts/spolka_jawna' ||
+									router.pathname === '/posts/spolka_jawna/[slug]' ? (
+										'bg-category'
+									) : (
+										'bg-white'
+									)
+								}
+							>
+								<Link href="/posts/spolka_jawna">
+									<span className="block py-3 px-4 cursor-pointer">spółka jawna</span>
+								</Link>
+							</div>
+						</div>
+
+						<div className="w-1/3">
+							<div
+								style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+								className={
+									router.pathname === '/posts/spolka_partnerska' ||
+									router.pathname === '/posts/spolka_partnerska/[slug]' ? (
+										'bg-category'
+									) : (
+										'bg-white'
+									)
+								}
+							>
+								<Link href="/posts/spolka_partnerska">
+									<span className="block py-3 px-4 cursor-pointer">spółka partnerska</span>
+								</Link>
+							</div>
+						</div>
+						<div className="w-1/3">
+							<div
+								style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+								className={
+									router.pathname === '/posts/spolka_z_o_o' ||
+									router.pathname === '/posts/spolka_z_o_o/[slug]' ? (
+										'bg-category'
+									) : (
+										'bg-white'
+									)
+								}
+							>
+								<Link href="/posts/spolka_z_o_o">
+									<span className="block py-3 px-4 cursor-pointer">spółka z o.o.</span>
+								</Link>
+							</div>
+						</div>
+
+						<div className="w-1/3">
+							<div
+								style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+								className={
+									router.pathname === '/posts/prosta_spolka_akcyjna' ||
+									router.pathname === '/posts/prosta_spolka_akcyjna/[slug]' ? (
+										'bg-category'
+									) : (
+										'bg-white'
+									)
+								}
+							>
+								<Link href="/posts/prosta_spolka_akcyjna">
+									<span className="block py-3 px-4 cursor-pointer">prosta spółka akcyjna</span>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="w-full flex justify-center">
+						<div className="flex flex-row text-center">
+							{/* <div className="">
+								<div
+									style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+									className={
+										router.pathname === '/posts/spolka_z_o_o' ||
+										router.pathname === '/posts/spolka_z_o_o/[slug]' ? (
+											'bg-category'
+										) : (
+											'bg-white'
+										)
+									}
+								>
+									<Link href="/posts/spolka_z_o_o">
+										<span className="block py-3 px-4 cursor-pointer">spółka z o.o.</span>
+									</Link>
+								</div>
+							</div>
+
+							<div className="">
+								<div
+									style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+									className={
+										router.pathname === '/posts/prosta_spolka_akcyjna' ||
+										router.pathname === '/posts/prosta_spolka_akcyjna/[slug]' ? (
+											'bg-category'
+										) : (
+											'bg-white'
+										)
+									}
+								>
+									<Link href="/posts/prosta_spolka_akcyjna">
+										<span className="block py-3 px-4 cursor-pointer">prosta spółka akcyjna</span>
+									</Link>
+								</div>
+							</div> */}
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
