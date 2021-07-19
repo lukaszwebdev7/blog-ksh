@@ -17,7 +17,7 @@ function PostContent(props) {
 	const router = useRouter();
 
 	return (
-		<div className="flex justify-center">
+		<div className="flex justify-center lg:mb-16">
 			<div className="w-11/12 sm:w-3/4 lg:w-full">
 				<button className="hidden lg:block mt-4 relative" type="button" onClick={() => router.back()}>
 					<div className=" flex lg:flex-row items-center font-bold fixed text-gray-25 fixed">
