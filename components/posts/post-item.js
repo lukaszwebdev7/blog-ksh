@@ -22,7 +22,7 @@ function PostItem(props) {
 			return 'spółka partnerska';
 		}
 		if (category === 'spolka_z_o_o') {
-			return 'spółka z ograniczoną odpowiedzialnością';
+			return 'spółka z o.o.';
 		}
 		if (category === 'prosta_spolka_akcyjna') {
 			return 'prosta spółka akcyjna';
@@ -45,13 +45,13 @@ function PostItem(props) {
 							<div
 								className={
 									category === 'spolka_jawna' ? (
-										'border-l-2 border-coffee text-coffee font-bold pl-4 mt-2 mb-4'
+										'border-r border-b border-coffee text-coffee pl-4 mt-2 mb-4'
 									) : '' || category === 'spolka_partnerska' ? (
-										'border-l-2 border-blue-version text-blue-version font-bold pl-4 mt-2 mb-4'
+										'border-r border-b border-blue-version text-blue-version  pl-4 mt-2 mb-4'
 									) : '' || category === 'spolka_z_o_o' ? (
-										'border-l-2 border-violet text-violet font-bold pl-4 mt-2 mb-4'
+										'border-r border-b border-violet text-violet pl-4 mt-2 mb-4'
 									) : '' || category === 'prosta_spolka_akcyjna' ? (
-										'border-l-2 border-amarant-one text-amarant-one font-bold pl-4 mt-2 mb-4'
+										'border-r border-b border-amarant-one text-amarant-one  pl-4 mt-2 mb-4'
 									) : (
 										''
 									)
@@ -61,7 +61,7 @@ function PostItem(props) {
 							</div>
 							<div className="text-base text-gray-75">{formattedDate}</div>
 
-							<div className="font-bold mb-6">{title}</div>
+							<div className="text-lg xl:text-xl font-bold mb-6">{title}</div>
 
 							<div className="flex justify-center">
 								<div className="w-11/12 text-justify">{excerpt}</div>

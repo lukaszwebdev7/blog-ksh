@@ -16,6 +16,7 @@ module.exports = {
 			gold: '#A98A51',
 			black: '#000000',
 			violet: '#553AA8',
+			orange: '#FF5500',
 			'amarant-one': '#BC3E75'
 		}),
 		borderColor: (theme) => ({
@@ -89,6 +90,7 @@ module.exports = {
 				'yellow-box': '#AA7642',
 				'blue-bg': '#011EFF',
 				'orange-about': '#F9C374',
+				'orange-category': '#FF5500',
 				category: '#E3EBF1',
 				gray: '#333333',
 				'gray-one': '#4B5563',

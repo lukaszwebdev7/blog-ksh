@@ -4,6 +4,9 @@ import Link from 'next/link';
 function NavigationPosts() {
 	const router = useRouter();
 
+	const active = 'bg-orange-category text-white w-40 text-center mb-2';
+	const unactive = 'bg-gray text-white w-40 text-center mb-2';
+
 	return (
 		<div
 			className={
@@ -17,27 +20,43 @@ function NavigationPosts() {
 				)
 			}
 		>
-			<div className="flex flex-col lg:flex-row md:mt-4">
+			<link
+				href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
+				rel="stylesheet"
+			/>
+			<div className="flex flex-col lg:flex-row md:mt-4 lg:mb-6">
 				<div className="py-3 px-4 font-bold md:ml-4">Filtrowanie: </div>
 
 				<div className="sm:hidden lg:block">
 					<div className="flex flex-col lg:flex-row ">
 						<div
-							style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
-							className={router.pathname === '/posts' ? 'bg-category' : 'bg-white'}
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
+							className={router.pathname === '/posts' ? active : unactive}
 						>
 							<Link href="/posts">
 								<span className="block py-3 px-4 cursor-pointer">wszystkie</span>
 							</Link>
 						</div>
 						<div
-							style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
 							className={
 								router.pathname === '/posts/spolka_jawna' ||
 								router.pathname === '/posts/spolka_jawna/[slug]' ? (
-									'bg-category'
+									active
 								) : (
-									'bg-white'
+									unactive
 								)
 							}
 						>
@@ -46,13 +65,19 @@ function NavigationPosts() {
 							</Link>
 						</div>
 						<div
-							style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
 							className={
 								router.pathname === '/posts/spolka_partnerska' ||
 								router.pathname === '/posts/spolka_partnerska/[slug]' ? (
-									'bg-category'
+									active
 								) : (
-									'bg-white'
+									unactive
 								)
 							}
 						>
@@ -61,13 +86,19 @@ function NavigationPosts() {
 							</Link>
 						</div>
 						<div
-							style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
 							className={
 								router.pathname === '/posts/spolka_z_o_o' ||
 								router.pathname === '/posts/spolka_z_o_o/[slug]' ? (
-									'bg-category'
+									active
 								) : (
-									'bg-white'
+									unactive
 								)
 							}
 						>
@@ -76,18 +107,24 @@ function NavigationPosts() {
 							</Link>
 						</div>
 						<div
-							style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
 							className={
 								router.pathname === '/posts/prosta_spolka_akcyjna' ||
 								router.pathname === '/posts/prosta_spolka_akcyjna/[slug]' ? (
-									'bg-category'
+									active
 								) : (
-									'bg-white'
+									unactive
 								)
 							}
 						>
 							<Link href="/posts/prosta_spolka_akcyjna">
-								<span className="block py-3 px-4 cursor-pointer">prosta spółka akcyjna</span>
+								<span className="block py-3 px-4 cursor-pointer">P.S.A.</span>
 							</Link>
 						</div>
 					</div>
@@ -97,8 +134,14 @@ function NavigationPosts() {
 					<div className="flex flex-row flex-wrap text-center justify-around">
 						<div className="w-1/3">
 							<div
-								style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
-								className={router.pathname === '/posts' ? 'bg-category' : 'bg-white'}
+								style={{
+									marginLeft: '10px',
+									marginRight: '10px',
+									borderRadius: '5px',
+									fontFamily: 'Open Sans Condensed',
+									letterSpacing: '2px'
+								}}
+								className={router.pathname === '/posts' ? active : unactive}
 							>
 								<Link href="/posts">
 									<span className="block py-3 px-4 cursor-pointer">wszystkie</span>
@@ -108,13 +151,19 @@ function NavigationPosts() {
 
 						<div className="w-1/3">
 							<div
-								style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+								style={{
+									marginLeft: '10px',
+									marginRight: '10px',
+									borderRadius: '5px',
+									fontFamily: 'Open Sans Condensed',
+									letterSpacing: '2px'
+								}}
 								className={
 									router.pathname === '/posts/spolka_jawna' ||
 									router.pathname === '/posts/spolka_jawna/[slug]' ? (
-										'bg-category'
+										active
 									) : (
-										'bg-white'
+										unactive
 									)
 								}
 							>
@@ -126,13 +175,19 @@ function NavigationPosts() {
 
 						<div className="w-1/3">
 							<div
-								style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+								style={{
+									marginLeft: '10px',
+									marginRight: '10px',
+									borderRadius: '5px',
+									fontFamily: 'Open Sans Condensed',
+									letterSpacing: '2px'
+								}}
 								className={
 									router.pathname === '/posts/spolka_partnerska' ||
 									router.pathname === '/posts/spolka_partnerska/[slug]' ? (
-										'bg-category'
+										active
 									) : (
-										'bg-white'
+										unactive
 									)
 								}
 							>
@@ -143,13 +198,19 @@ function NavigationPosts() {
 						</div>
 						<div className="w-1/3">
 							<div
-								style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+								style={{
+									marginLeft: '10px',
+									marginRight: '10px',
+									borderRadius: '5px',
+									fontFamily: 'Open Sans Condensed',
+									letterSpacing: '2px'
+								}}
 								className={
 									router.pathname === '/posts/spolka_z_o_o' ||
 									router.pathname === '/posts/spolka_z_o_o/[slug]' ? (
-										'bg-category'
+										active
 									) : (
-										'bg-white'
+										unactive
 									)
 								}
 							>
@@ -161,18 +222,24 @@ function NavigationPosts() {
 
 						<div className="w-1/3">
 							<div
-								style={{ marginLeft: '10px', marginRight: '10px', borderRadius: '5px' }}
+								style={{
+									marginLeft: '10px',
+									marginRight: '10px',
+									borderRadius: '5px',
+									fontFamily: 'Open Sans Condensed',
+									letterSpacing: '2px'
+								}}
 								className={
 									router.pathname === '/posts/prosta_spolka_akcyjna' ||
 									router.pathname === '/posts/prosta_spolka_akcyjna/[slug]' ? (
-										'bg-category'
+										active
 									) : (
-										'bg-white'
+										unactive
 									)
 								}
 							>
 								<Link href="/posts/prosta_spolka_akcyjna">
-									<span className="block py-3 px-4 cursor-pointer">prosta spółka akcyjna</span>
+									<span className="block py-3 px-4 cursor-pointer">P.S.A.</span>
 								</Link>
 							</div>
 						</div>
