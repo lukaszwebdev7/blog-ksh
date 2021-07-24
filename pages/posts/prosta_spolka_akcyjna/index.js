@@ -26,16 +26,18 @@ function ProstaPostsPage(props) {
 	const [ chosenArray, setChosenArray ] = useState(firstArray);
 
 	return (
-		<div>
-			<ul className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-around mb-16 md:mb-32">
-				{chosenArray.map((post) => <PostItem key={post.slug} post={post} />)}
-			</ul>
-			<div className="flex justify-center">
-				{chunks.map((array, index) => (
-					<button key={index} onClick={() => setChosenArray(array)}>
-						{chunks.length >= 2 ? index + 1 : ''}
-					</button>
-				))}
+		<div className="flex justify-center">
+			<div className="w-10/12">
+				<ul className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-around mb-16 md:mb-32">
+					{chosenArray.map((post) => <PostItem key={post.slug} post={post} />)}
+				</ul>
+				<div className="flex justify-center">
+					{chunks.map((array, index) => (
+						<button key={index} onClick={() => setChosenArray(array)}>
+							{chunks.length >= 2 ? index + 1 : ''}
+						</button>
+					))}
+				</div>
 			</div>
 		</div>
 	);

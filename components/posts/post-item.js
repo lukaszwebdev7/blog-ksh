@@ -35,7 +35,7 @@ function PostItem(props) {
 				<article className=" md:w-full mb-10">
 					<Link href={linkPath}>
 						<a>
-							<Image className="temporary" src={imagePath} alt={title} width={800} height={400} />
+							<Image className="temporary" src={imagePath} alt={title} width={800} height={450} />
 							<style jsx global>{`
 								.temporary {
 									border-radius: 3px;

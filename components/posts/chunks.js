@@ -19,7 +19,7 @@ function Chunks(props) {
 			</ul>
 			<div className="flex justify-center">
 				{arrays.map((array, index) => (
-					<button key={index} onClick={(e) => loadPostsHandler(e, array)}>
+					<button className="mx-2 p-2" key={index} id={index + 1} onClick={(e) => loadPostsHandler(e, array)}>
 						{arrays.length >= 2 ? index + 1 : ''}
 					</button>
 				))}
