@@ -9,10 +9,10 @@ function Navigation() {
 	return (
 		<div className="flex flex-col md:flex-row sm:justify-between">
 			<div className="flex items-center justify-between pr-5 sm:ml-12 xl:ml-10">
-				<div className="-ml-8 sm:-ml-20 sm:pl-2 cursor-pointer">
+				<div className=" sm:-ml-14 sm:pl-2 cursor-pointer">
 					<a>
 						<Link href="/">
-							<img className="h-24 xl:h-32" src="/images/other/logo.png" alt="logo" />
+							<img className="h-16 xl:h-24" src="/images/other/logo.jpg" alt="logo" />
 						</Link>
 					</a>
 				</div>

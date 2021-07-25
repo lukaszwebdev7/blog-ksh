@@ -24,7 +24,7 @@ function NavigationPosts() {
 				href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap"
 				rel="stylesheet"
 			/>
-			<div className="flex flex-col lg:flex-row md:mt-4 lg:mb-6">
+			<div className="flex flex-col lg:flex-row md:mt-8 lg:mb-6">
 				<div className="py-3 px-4 font-bold md:ml-4">Filtrowanie: </div>
 
 				<div className="sm:hidden lg:block">

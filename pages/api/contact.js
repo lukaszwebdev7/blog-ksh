@@ -56,7 +56,7 @@ export default async function(req, res) {
 	const mailData = {
 		from: 'jan.kowalski_122@interia.pl',
 		to: 'zen_24@wp.pl',
-		subject: `Wiadomość od ${name}`,
+		subject: `Wiadomość ze strony apółkaaktywnie.pl od ${name}`,
 		text: 'Wiadomość od ' + email + ' o treści: \n' + message
 	};
 
