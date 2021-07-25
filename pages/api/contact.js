@@ -40,18 +40,25 @@ export default async function(req, res) {
 		port: 465,
 		host: 'poczta.interia.pl',
 		auth: {
-			user: 'lukasz_123sz@interia.pl',
+			user: 'jan.kowalski_122@interia.pl',
 			pass: process.env.password
 		},
 		secure: true
 	});
 
+	const { name, email, message } = req.body;
+
+	if (!email || !email.includes('@') || !name || name.trim() === '' || !message || message.trim() === '') {
+		res.status(422).json({ message: 'Invalid input' });
+		return;
+	}
+
 	const mailData = {
-		from: 'lukasz_123sz@interia.pl',
+		from: 'jan.kowalski_122@interia.pl',
 		to: 'zen_24@wp.pl',
-		subject: `Message From ${req.body.name}`,
-		text: req.body.message + ' | Sent from: ' + req.body.email,
-		html: `<div>${req.body.message}</div><p>Sent from: ${req.body.email}</p>`
+		subject: `Message From ${name}`,
+		text: message + ' | Sent from: ' + email,
+		html: `<div>${message}</div><p>Sent from: ${email}</p>`
 	};
 
 	transporter.sendMail(mailData, function(err, info) {

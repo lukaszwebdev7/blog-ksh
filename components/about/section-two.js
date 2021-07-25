@@ -2,7 +2,7 @@ function SectionTwo() {
 	return (
 		<div>
 			<div
-				style={{ fontFamily: 'Lobster Two', letterSpacing: '2px' }}
+				style={{ fontFamily: 'Open Sans Condensed', letterSpacing: '2px' }}
 				className="md:ml-20 xl:ml-28 text-lg md:text-3xl xl:text-4xl text-gray font-bold px-2 rounded tracking-wider mb-12"
 			>
 				W kancelarii uzyskasz pomoc w zakresie:

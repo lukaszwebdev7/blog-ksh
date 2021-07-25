@@ -2,8 +2,6 @@ import { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 function SendMessage() {
-	const key = process.env.key;
-
 	const [ captchaToken, setCaptchaToken ] = useState('');
 	const [ name, setName ] = useState('');
 	const [ email, setEmail ] = useState('');
@@ -47,10 +45,10 @@ function SendMessage() {
 
 	return (
 		<div className="flex justify-center mb-12 md:mb-20">
-			<div class="w-11/12 md:w-2/3 py-6 md:px-4 bg-mailForm">
-				<form class="contact-form">
-					<div class="sm:flex sm:flex-wrap ">
-						<div class="sm:w-1/2 px-3 mb-6">
+			<div className="w-11/12 md:w-2/3 py-6 md:px-4 bg-mailForm">
+				<form className="contact-form">
+					<div className="sm:flex sm:flex-wrap ">
+						<div className="sm:w-1/2 px-3 mb-6">
 							<input
 								type="text"
 								placeholder="imię"
@@ -59,10 +57,10 @@ function SendMessage() {
 								}}
 								name="name"
 								id="name"
-								class="border-2 rounded px-3 py-1 w-full focus:border-indigo-400 input"
+								className="border-2 rounded px-3 py-1 w-full focus:border-indigo-400 input"
 							/>
 						</div>
-						<div class="sm:w-1/2 px-3 mb-6">
+						<div className="sm:w-1/2 px-3 mb-6">
 							<input
 								type="text"
 								placeholder="e-mail"
@@ -71,10 +69,10 @@ function SendMessage() {
 								}}
 								name="email"
 								id="email"
-								class="border-2 rounded px-3 py-1 w-full focus:border-indigo-400 input"
+								className="border-2 rounded px-3 py-1 w-full focus:border-indigo-400 input"
 							/>
 						</div>
-						<div class="sm:w-full px-3">
+						<div className="sm:w-full px-3">
 							<textarea
 								name="message"
 								id="message"
@@ -85,11 +83,11 @@ function SendMessage() {
 									setMessage(e.target.value);
 								}}
 								name="message"
-								class="border-2 rounded px-3 py-1 w-full focus:border-indigo-400 input"
+								className="border-2 rounded px-3 py-1 w-full focus:border-indigo-400 input"
 							/>
 						</div>
 					</div>
-					<div class="text-right mt-4 mb-2 md:mt-12 mr-4 md:mr-0">
+					<div className="text-right mt-4 mb-2 md:mt-12 mr-4 md:mr-0">
 						<button
 							onClick={async (e) => {
 								if ((await grecaptcha.getResponse()) === '') {
@@ -98,10 +96,10 @@ function SendMessage() {
 								}
 								handleSubmit(e);
 							}}
-							class="border-2 border-indigo-600 rounded px-6 py-2 text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors duration-300"
+							className="border-2 border-indigo-600 rounded px-6 py-2 text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors duration-300"
 						>
 							Wyślij
-							<i class="fas fa-chevron-right ml-2 text-sm" />
+							<i className="fas fa-chevron-right ml-2 text-sm" />
 						</button>
 					</div>
 					<ReCAPTCHA
