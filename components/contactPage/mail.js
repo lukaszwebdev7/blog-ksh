@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
+
+import Notification from '../ui/notification';
 
 function SendMessage() {
 	const [ captchaToken, setCaptchaToken ] = useState('');
@@ -7,11 +9,25 @@ function SendMessage() {
 	const [ email, setEmail ] = useState('');
 	const [ message, setMessage ] = useState('');
 	const [ submitted, setSubmitted ] = useState(false);
+	const [ requestStatus, setRequestStatus ] = useState();
+	const [ requestError, setRequestError ] = useState();
+
+	useEffect(
+		() => {
+			if (requestStatus === 'success' || requestStatus === 'error') {
+				const timer = setTimeout(() => {
+					setRequestStatus(null);
+					setRequestError(null);
+				}, 4000);
+
+				return () => clearTimeout(timer);
+			}
+		},
+		[ requestStatus ]
+	);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-
-		console.log('Sending');
 
 		let data = {
 			captchaToken,
@@ -20,6 +36,21 @@ function SendMessage() {
 			message
 		};
 
+		if (!name || name.trim() === '' || name.length <= 2) {
+			alert('Wpisz imię.');
+			return;
+		}
+
+		if (!email || !email.includes('@') || email.length <= 5) {
+			alert('Nie wpisałeś adresu e-mail, bądź wpisałeś go błędnie.');
+			return;
+		}
+
+		if (!message || message.trim() === '' || message.length <= 14) {
+			alert('Wpisz wiadomość.');
+			return;
+		}
+
 		fetch('/api/contact', {
 			method: 'POST',
 			headers: {
@@ -27,25 +58,48 @@ function SendMessage() {
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify(data)
-		}).then((res) => {
-			console.log('Response received');
-			if (res.status === 200) {
-				console.log('Response succeeded!');
+		})
+			.then((res) => {
+				console.log('Response received');
+				if (res.status === 200) {
+					console.log('Response succeeded!');
 
-				setSubmitted(true);
-				setName('');
-				setEmail('');
-				setMessage('');
-				document.getElementById('name').value = '';
-				document.getElementById('email').value = '';
-				document.getElementById('message').value = '';
-			}
-		});
+					setRequestStatus('success');
+					setSubmitted(true);
+					setName('');
+					setEmail('');
+					setMessage('');
+					document.getElementById('name').value = '';
+					document.getElementById('email').value = '';
+					document.getElementById('message').value = '';
+				}
+			})
+			.catch((error) => {
+				setRequestError(error.message);
+				setRequestStatus('error');
+			});
 	};
+
+	let notification;
+
+	if (requestStatus === 'success') {
+		notification = {
+			title: 'Sukces !',
+			message: 'Wiadomość została wysłana !'
+		};
+	}
+
+	if (requestStatus === 'error') {
+		notification = {
+			title: 'Błąd wysyłania wiadomości !',
+			message: requestError
+		};
+	}
 
 	return (
 		<div className="flex justify-center mb-12 md:mb-20">
-			<div className="w-11/12 md:w-2/3 py-6 md:px-4 bg-mailForm">
+			<div className="w-11/12 md:w-2/3 py-6 md:px-4 bg-mailForm" id="notification">
+				{notification && <Notification title={notification.title} message={notification.message} />}
 				<form className="contact-form">
 					<div className="sm:flex sm:flex-wrap ">
 						<div className="sm:w-1/2 px-3 mb-6">

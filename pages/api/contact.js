@@ -56,9 +56,8 @@ export default async function(req, res) {
 	const mailData = {
 		from: 'jan.kowalski_122@interia.pl',
 		to: 'zen_24@wp.pl',
-		subject: `Message From ${name}`,
-		text: message + ' | Sent from: ' + email,
-		html: `<div>${message}</div><p>Sent from: ${email}</p>`
+		subject: `Wiadomość od ${name}`,
+		text: 'Wiadomość od ' + email + ' o treści: \n' + message
 	};
 
 	transporter.sendMail(mailData, function(err, info) {
