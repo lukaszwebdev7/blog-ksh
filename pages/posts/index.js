@@ -5,7 +5,7 @@ import Chunks from '../../components/posts/chunks';
 function AllPostsPage(props) {
 	const posts = props.posts;
 
-	const size = 2;
+	const size = 6;
 
 	function chunksMaker() {
 		const result = [];
