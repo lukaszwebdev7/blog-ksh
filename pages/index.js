@@ -34,6 +34,7 @@ export function getStaticProps() {
 	return {
 		props: {
 			posts: latestPosts
-		}
+		},
+		revalidate: 60
 	};
 }
