@@ -46,7 +46,7 @@ function Navigation() {
 				</div>
 			</div>
 
-			<div className="flex flex-row items-center md:justify-end font-bold text-xl xl:text-2xl">
+			<div className="md:hidden flex flex-row items-center md:justify-end font-bold text-xl xl:text-2xl">
 				<div className="w-full burger flex flex-col md:flex-row tracking-wider">
 					<div className="mx-2 md:mx-4 cursor-pointer md:hover:text-gray-75 delay-200">
 						<div style={{ padding: '6px 0 6px 6px' }} className={router.pathname == '/' ? active : ''}>
