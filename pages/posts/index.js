@@ -1,5 +1,5 @@
 import { getAllPosts } from '../../lib/posts-util';
-
+import ScrollIntoView from 'react-scroll-into-view';
 import Chunks from '../../components/posts/chunks';
 
 function AllPostsPage(props) {
@@ -18,9 +18,11 @@ function AllPostsPage(props) {
 	const arrays = chunksMaker();
 
 	return (
-		<div className="flex justify-center">
+		<div id="start" className="flex justify-center">
 			<ul className="w-10/12 mb-16 md:mb-32">
-				<Chunks posts={posts} arrays={arrays} />
+				<ScrollIntoView selector="#start">
+					<Chunks posts={posts} arrays={arrays} />
+				</ScrollIntoView>
 			</ul>
 		</div>
 	);

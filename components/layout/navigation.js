@@ -94,11 +94,94 @@ function Navigation() {
 
 					<div className="mx-2 md:mx-4 md:hover:text-gray-75 delay-200">
 						<div style={{ padding: '6px 0 6px 6px' }} className={router.pathname == '/about' ? active : ''}>
-							<Link href="/about">Kancelaria</Link>
+							<Link href="/about">
+								<p
+									onClick={() => {
+										const burger = window.document.querySelector('.burger');
+										const menu = window.document.querySelector('.menu');
+										return menu.classList.add('-mt-6'), burger.classList.add('hidden');
+									}}
+								>
+									Kancelaria
+								</p>
+							</Link>
 						</div>
 					</div>
 
 					<div className="mx-2 md:mx-4 md:hover:text-gray-75 delay-200">
+						<div
+							style={{ padding: '6px 0 6px 6px' }}
+							className={router.pathname == '/contact' ? active : ''}
+						>
+							<Link href="/contact">
+								<p
+									onClick={() => {
+										const burger = window.document.querySelector('.burger');
+										const menu = window.document.querySelector('.menu');
+										return menu.classList.add('-mt-6'), burger.classList.add('hidden');
+									}}
+								>
+									Kontakt
+								</p>
+							</Link>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className="flex flex-row  md:justify-end font-bold text-xl xl:text-2xl items-center">
+				<div className="w-full flex flex-row tracking-wider ">
+					<div className="hidden md:block mx-2 md:mx-4 cursor-pointer md:hover:text-gray-75 delay-200">
+						<div style={{ padding: '6px 0 6px 6px' }} className={router.pathname == '/' ? active : ''}>
+							<Link href="/">
+								<svg
+									className="w-6 h-6 sm:w-8 sm:h-8"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="3"
+										d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+									/>
+								</svg>
+							</Link>
+						</div>
+					</div>
+
+					<div className="hidden md:block mx-2 md:mx-4 md:hover:text-gray-75 delay-200">
+						<div
+							style={{ padding: '6px 0 6px 6px' }}
+							className={
+								router.pathname == '/posts' ||
+								router.pathname == '/posts/spolka_jawna' ||
+								router.pathname == '/posts/spolka_jawna/[slug]' ||
+								router.pathname == '/posts/spolka_partnerska' ||
+								router.pathname == '/posts/spolka_partnerska/[slug]' ||
+								router.pathname == '/posts/spolka_z_o_o' ||
+								router.pathname == '/posts/spolka_z_o_o/[slug]' ||
+								router.pathname == '/posts/prosta_spolka_akcyjna' ||
+								router.pathname == '/posts/prosta_spolka_akcyjna/[slug]' ? (
+									active
+								) : (
+									''
+								)
+							}
+						>
+							<Link href="/posts">Artykuły</Link>
+						</div>
+					</div>
+
+					<div className="hidden md:block mx-2 md:mx-4 md:hover:text-gray-75 delay-200">
+						<div style={{ padding: '6px 0 6px 6px' }} className={router.pathname == '/about' ? active : ''}>
+							<Link href="/about">Kancelaria</Link>
+						</div>
+					</div>
+
+					<div className="hidden md:block mx-2 md:mx-4 md:hover:text-gray-75 delay-200">
 						<div
 							style={{ padding: '6px 0 6px 6px' }}
 							className={router.pathname == '/contact' ? active : ''}

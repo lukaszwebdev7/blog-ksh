@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -35,6 +36,11 @@ function PostItem(props) {
 				<article className=" md:w-full mb-10">
 					<Link href={linkPath}>
 						<a>
+							{useEffect(() => {
+								const burger = window.document.querySelector('.burger');
+								const menu = window.document.querySelector('.menu');
+								return menu.classList.add('-mt-6'), burger.classList.add('hidden');
+							}, [])}
 							<Image className="temporary" src={imagePath} alt={title} width={800} height={450} />
 							<style jsx global>{`
 								.temporary {
