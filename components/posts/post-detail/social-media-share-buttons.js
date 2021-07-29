@@ -11,9 +11,6 @@ function SocialMediaShareButtons(props) {
 	const pathWithoutTitle = asPath.split('/').slice(0, 3).join('/');
 	const path = 'blog-ksh.vercel.app' + pathWithoutTitle + `/${slug}`;
 
-	console.log(title);
-	console.log(typeof path);
-
 	return (
 		<div className="flex flex-col sm:flex-row justify-end mt-8 sm:items-center">
 			<div
