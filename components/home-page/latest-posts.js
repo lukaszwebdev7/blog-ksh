@@ -19,5 +19,3 @@ function LatestPosts(props) {
 }
 
 export default LatestPosts;
-
-// https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap

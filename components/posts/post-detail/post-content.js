@@ -1,7 +1,7 @@
+import { useRouter } from 'next/router';
 import ReactMarkdown from 'react-markdown';
 import PostHeader from './post-header';
-
-import { useRouter } from 'next/router';
+import SocialMediaShareButtons from './social-media-share-buttons';
 
 function PostContent(props) {
 	const { post } = props;
@@ -51,7 +51,8 @@ function PostContent(props) {
 						<div className="prose max-w-none">
 							<ReactMarkdown>{post.content}</ReactMarkdown>
 						</div>
-						<button className="lg:hidden mt-4" type="button" onClick={() => router.back()}>
+						<SocialMediaShareButtons />
+						<button className="lg:hidden mt-6" type="button" onClick={() => router.back()}>
 							<div className="flex lg:flex-row items-center font-bold  text-gray-25">
 								<div className="mr-4">
 									<svg
