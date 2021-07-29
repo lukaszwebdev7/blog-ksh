@@ -30,17 +30,17 @@ function SocialMediaShareButtons(props) {
 						</FacebookShareButton>
 					</div>
 					<div className="mx-2">
-						<LinkedinShareButton title={title} url={path}>
+						<LinkedinShareButton url={path}>
 							<LinkedinIcon logofillcolor="white" size={40} round={true} />
 						</LinkedinShareButton>
 					</div>
 					<div className="mx-2">
-						<TwitterShareButton url={''}>
+						<TwitterShareButton title={title} url={path}>
 							<TwitterIcon logofillcolor="white" size={40} round={true} />
 						</TwitterShareButton>
 					</div>
 					<div className="ml-2">
-						<WhatsappShareButton url={''}>
+						<WhatsappShareButton title={title} separator url={path}>
 							<WhatsappIcon logofillcolor="white" size={40} round={true} />
 						</WhatsappShareButton>
 					</div>
