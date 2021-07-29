@@ -12,7 +12,7 @@ function SocialMediaShareButtons(props) {
 	const path = 'blog-ksh.vercel.app' + pathWithoutTitle + `/${slug}`;
 
 	console.log(title);
-	console.log(path);
+	console.log(typeof path);
 
 	return (
 		<div className="flex flex-col sm:flex-row justify-end mt-8 sm:items-center">
@@ -30,7 +30,7 @@ function SocialMediaShareButtons(props) {
 						</FacebookShareButton>
 					</div>
 					<div className="mx-2">
-						<LinkedinShareButton title={title} source={path}>
+						<LinkedinShareButton title={title} url={path}>
 							<LinkedinIcon logofillcolor="white" size={40} round={true} />
 						</LinkedinShareButton>
 					</div>
