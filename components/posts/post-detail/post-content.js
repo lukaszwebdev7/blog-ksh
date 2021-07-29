@@ -51,7 +51,7 @@ function PostContent(props) {
 						<div className="prose max-w-none">
 							<ReactMarkdown>{post.content}</ReactMarkdown>
 						</div>
-						<SocialMediaShareButtons />
+						<SocialMediaShareButtons title={post.title} />
 						<button className="lg:hidden mt-6" type="button" onClick={() => router.back()}>
 							<div className="flex lg:flex-row items-center font-bold  text-gray-25">
 								<div className="mr-4">
