@@ -74,6 +74,7 @@ function Navigation() {
 							style={{ padding: '6px 0 6px 6px' }}
 							className={
 								router.pathname == '/posts' ||
+								router.pathname == '/posts/wyszukiwanie' ||
 								router.pathname == '/posts/spolka_jawna' ||
 								router.pathname == '/posts/spolka_jawna/[slug]' ||
 								router.pathname == '/posts/spolka_partnerska' ||
@@ -157,6 +158,7 @@ function Navigation() {
 							style={{ padding: '6px 0 6px 6px' }}
 							className={
 								router.pathname == '/posts' ||
+								router.pathname == '/posts/wyszukiwanie' ||
 								router.pathname == '/posts/spolka_jawna' ||
 								router.pathname == '/posts/spolka_jawna/[slug]' ||
 								router.pathname == '/posts/spolka_partnerska' ||

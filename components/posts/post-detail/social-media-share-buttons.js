@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 
 import { FacebookShareButton, TwitterShareButton, WhatsappShareButton } from 'react-share';
 
@@ -13,14 +12,14 @@ function SocialMediaShareButtons(props) {
 	const path = 'https://blog-ksh.vercel.app' + pathWithoutTitle + `/${slug}/`;
 
 	return (
-		<div className="flex flex-col sm:flex-row justify-end mt-8 sm:items-center">
+		<div className="flex flex-row justify-end mt-8 items-center">
 			<div
 				style={{ fontFamily: 'Open Sans Condensed', letterSpacing: '2px' }}
-				className="mr-2 font-bold text-orange mb-2 sm:mb-0"
+				className="mr-2 font-bold text-orange"
 			>
 				Ciekawe ? Udostępnij na:
 			</div>
-			<div className="flex justify-center sm:justify-start">
+			<div className="flex justify-start">
 				<div className="flex flex-row items-center">
 					<div className="mr-2">
 						<FacebookShareButton url={path}>

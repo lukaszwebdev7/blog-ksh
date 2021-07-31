@@ -4,8 +4,10 @@ import Link from 'next/link';
 function NavigationPosts() {
 	const router = useRouter();
 
-	const active = 'bg-orange-category text-white w-40 text-center mb-2';
-	const unactive = 'bg-gray text-white w-40 text-center mb-2';
+	const active = 'bg-orange-category text-white w-28 text-center mb-2';
+	const unactive = 'bg-gray text-white w-28 text-center mb-2';
+	const activeArchive = 'bg-lightblue text-white w-28 text-center mb-2';
+	const unactiveArchive = 'bg-category w-28 text-center mb-2';
 
 	return (
 		<div
@@ -40,7 +42,7 @@ function NavigationPosts() {
 							className={router.pathname === '/posts' ? active : unactive}
 						>
 							<Link href="/posts">
-								<span className="block py-3 px-4 cursor-pointer">wszystkie</span>
+								<span className="block py-3 cursor-pointer">wszystkie</span>
 							</Link>
 						</div>
 						<div
@@ -61,7 +63,7 @@ function NavigationPosts() {
 							}
 						>
 							<Link href="/posts/spolka_jawna">
-								<span className="block py-3 px-4 cursor-pointer">spółka jawna</span>
+								<span className="block py-3 cursor-pointer">jawna</span>
 							</Link>
 						</div>
 						<div
@@ -82,7 +84,7 @@ function NavigationPosts() {
 							}
 						>
 							<Link href="/posts/spolka_partnerska">
-								<span className="block py-3 px-4 cursor-pointer">spółka partnerska</span>
+								<span className="block py-3 cursor-pointer">partnerska</span>
 							</Link>
 						</div>
 						<div
@@ -103,7 +105,7 @@ function NavigationPosts() {
 							}
 						>
 							<Link href="/posts/spolka_z_o_o">
-								<span className="block py-3 px-4 cursor-pointer">spółka z o.o.</span>
+								<span className="block py-3 cursor-pointer">z o.o.</span>
 							</Link>
 						</div>
 						<div
@@ -124,7 +126,21 @@ function NavigationPosts() {
 							}
 						>
 							<Link href="/posts/prosta_spolka_akcyjna">
-								<span className="block py-3 px-4 cursor-pointer">P.S.A.</span>
+								<span className="block py-3 cursor-pointer">P.S.A.</span>
+							</Link>
+						</div>
+						<div
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
+							className={router.pathname === '/posts/wyszukiwanie' ? activeArchive : unactiveArchive}
+						>
+							<Link href="/posts/wyszukiwanie">
+								<span className="block py-3 cursor-pointer">wyszukiwanie</span>
 							</Link>
 						</div>
 					</div>
@@ -144,7 +160,7 @@ function NavigationPosts() {
 								className={router.pathname === '/posts' ? active : unactive}
 							>
 								<Link href="/posts">
-									<span className="block py-3 px-4 cursor-pointer">wszystkie</span>
+									<span className="block py-3 cursor-pointer">wszystkie</span>
 								</Link>
 							</div>
 						</div>
@@ -168,7 +184,7 @@ function NavigationPosts() {
 								}
 							>
 								<Link href="/posts/spolka_jawna">
-									<span className="block py-3 px-4 cursor-pointer">spółka jawna</span>
+									<span className="block py-3 cursor-pointer">jawna</span>
 								</Link>
 							</div>
 						</div>
@@ -192,7 +208,7 @@ function NavigationPosts() {
 								}
 							>
 								<Link href="/posts/spolka_partnerska">
-									<span className="block py-3 px-4 cursor-pointer">spółka partnerska</span>
+									<span className="block py-3 cursor-pointer">partnerska</span>
 								</Link>
 							</div>
 						</div>
@@ -215,7 +231,7 @@ function NavigationPosts() {
 								}
 							>
 								<Link href="/posts/spolka_z_o_o">
-									<span className="block py-3 px-4 cursor-pointer">spółka z o.o.</span>
+									<span className="block py-3 cursor-pointer">z o.o.</span>
 								</Link>
 							</div>
 						</div>
@@ -239,7 +255,23 @@ function NavigationPosts() {
 								}
 							>
 								<Link href="/posts/prosta_spolka_akcyjna">
-									<span className="block py-3 px-4 cursor-pointer">P.S.A.</span>
+									<span className="block py-3 cursor-pointer">P.S.A.</span>
+								</Link>
+							</div>
+						</div>
+						<div className="w-1/3">
+							<div
+								style={{
+									marginLeft: '10px',
+									marginRight: '10px',
+									borderRadius: '5px',
+									fontFamily: 'Open Sans Condensed',
+									letterSpacing: '2px'
+								}}
+								className={router.pathname === '/posts/wyszukiwanie' ? activeArchive : unactiveArchive}
+							>
+								<Link href="/posts/wyszukiwanie">
+									<span className="block py-3 cursor-pointer">wyszukiwanie</span>
 								</Link>
 							</div>
 						</div>

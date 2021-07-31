@@ -6,7 +6,7 @@ function Footer() {
 				<span className="w-10/12 bg-yellow-box h-px" />
 			</div>
 
-			<div className="sm:hidden flex flex-col justify-center text-center font-bold text-base text-gray-25 mb-2">
+			<div className="sm:hidden flex flex-col justify-center text-center font-bold text-sm text-gray-25 mb-2">
 				<div className="">radca prawny Łukasz Szczepaniak</div>
 				<div>tel.: 505 305 893</div>
 				<div>e-mail: LS@radcapiaseczno.pl</div>
