@@ -1,7 +1,7 @@
 ---
 date: '2021-01-09'
 category: 'spolka_jawna'
-title: 'Lorem ipsum dolor sit amet cursus consequat'
+title: 'Lorem ipsum dolor sit amet cursus consequat3'
 excerpt: 'Lorem ipsum dolor sit amet cursus consequat, orci sem tincidunt in, suscipit rutrum. In viverra mattis. Aliquam fermentum rutrum.'
 image: amet3.jpg
 ---

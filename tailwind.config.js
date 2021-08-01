@@ -28,6 +28,7 @@ module.exports = {
 			gray: '#333333',
 			violet: '#553AA8',
 			white: '#FFFFFF',
+			lightblue: '#2458C4',
 			'amarant-one': '#BC3E75',
 			'blue-version': '#233e8b'
 		}),

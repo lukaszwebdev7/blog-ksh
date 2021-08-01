@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
+
 import { getAllPosts } from '../../lib/posts-util';
+import SearchEngine from '../../components/ui/search-engine';
 
 function Archive(props) {
 	const posts = props.posts;
@@ -23,16 +25,19 @@ function Archive(props) {
 						const menu = window.document.querySelector('.menu');
 						return menu.classList.add('-mt-6'), burger.classList.add('hidden');
 					}, [])}
-					<div className="font-bold md:w-5/12">Wyszukiwanie:</div>
+					<div className="font-bold md:w-5/12">
+						<div className="mb-8">Wyszukiwanie:</div>
+						<SearchEngine posts={posts} />
+					</div>
 					<div className="md:w-7/12">
 						<div className="font-bold mb-6">Lista wszystkich postów:</div>
 						<ul>
 							{posts.map((post, index) => (
-								<div className="my-2 cursor-pointer">
+								<div key={post.slug} className="my-2 cursor-pointer">
 									<div className="flex flex-row">
 										<div className="w-4 font-bold mr-1">{index + 1 + '.'}</div>
 										<div className="flex flex-row flex-wrap">
-											<Link key={post.slug} href={`/posts/${post.category}/${post.slug}`}>
+											<Link href={`/posts/${post.category}/${post.slug}`}>
 												<div className="mr-2 text-lightblue hover:underline">{post.title}</div>
 											</Link>
 
