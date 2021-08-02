@@ -30,7 +30,7 @@ function NavigationPosts() {
 				<div className="py-3 px-4 font-bold md:ml-4">Filtrowanie: </div>
 
 				<div className="sm:hidden lg:block">
-					<div className="flex flex-col lg:flex-row ">
+					<div className="flex flex-row flex-wrap">
 						<div
 							style={{
 								marginLeft: '10px',
