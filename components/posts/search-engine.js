@@ -30,16 +30,21 @@ function SearchEngine(props) {
 					placeholder="szukane słowo..."
 					ref={enteredValue}
 				/>
-				<button onClick={(e) => searchHandler(e)}>Wyszukaj</button>
+				<button className="bg-category py-1 px-2 hover:text-orange" onClick={(e) => searchHandler(e)}>
+					Wyszukaj
+				</button>
 				<button />
 			</div>
-			<div className="xxx">
+			<div className="mb-6 md:mb-0 md:mr-6">
 				{sValue !== null ? (
-					posts.map((post) => {
+					posts.map((post, index) => {
 						if (post.title.includes(sValue) || post.content.includes(sValue)) {
 							return (
-								<div className="text-orange" key={post.slug}>
-									<Link href={`/posts/${post.category}/${post.slug}`}>{post.title}</Link>
+								<div className="flex flex-row text-orange">
+									<div className="mr-1">{`${index + 1}.`}</div>
+									<div className="" key={post.slug}>
+										<Link href={`/posts/${post.category}/${post.slug}`}>{post.title}</Link>
+									</div>
 								</div>
 							);
 						}

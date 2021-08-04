@@ -1,8 +1,15 @@
 import { useRouter } from 'next/router';
 
-import { FacebookShareButton, TwitterShareButton, WhatsappShareButton } from 'react-share';
+import {
+	FacebookShareButton,
+	TelegramShareButton,
+	TwitterShareButton,
+	WhatsappShareButton,
+	EmailShareButton,
+	PocketShareButton
+} from 'react-share';
 
-import { FacebookIcon, TwitterIcon, WhatsappIcon } from 'react-share';
+import { FacebookIcon, TelegramIcon, TwitterIcon, WhatsappIcon, EmailIcon, PocketIcon } from 'react-share';
 
 function SocialMediaShareButtons(props) {
 	const { title, slug } = props.post;
@@ -12,21 +19,26 @@ function SocialMediaShareButtons(props) {
 	const path = 'https://blog-ksh.vercel.app' + pathWithoutTitle + `/${slug}/`;
 
 	return (
-		<div className="flex flex-row justify-end mt-8 items-center">
+		<div className="flex flex-col sm:flex-row justify-end mt-8 mb-4 sm:items-center">
 			<div
 				style={{ fontFamily: 'Open Sans Condensed', letterSpacing: '2px' }}
-				className="mr-2 font-bold text-orange"
+				className="mr-2 mb-4 sm:mb-0 font-bold text-orange"
 			>
-				Ciekawe ? Udostępnij na:
+				Udostępnij lub zapisz:
 			</div>
-			<div className="flex justify-start">
+			<div className="flex justify-end">
 				<div className="flex flex-row items-center">
-					<div className="mr-2">
+					<div className="ml-2">
 						<FacebookShareButton url={path}>
 							<FacebookIcon logofillcolor="white" size={40} round={true} />
 						</FacebookShareButton>
 					</div>
-					<div className="mx-2">
+					<div className="ml-2">
+						<TelegramShareButton url={path} title={title}>
+							<TelegramIcon logofillcolor="white" size={40} round={true} />
+						</TelegramShareButton>
+					</div>
+					<div className="ml-2">
 						<TwitterShareButton title={title} url={path}>
 							<TwitterIcon logofillcolor="white" size={40} round={true} />
 						</TwitterShareButton>
@@ -35,6 +47,16 @@ function SocialMediaShareButtons(props) {
 						<WhatsappShareButton title={title} separator url={path}>
 							<WhatsappIcon logofillcolor="white" size={40} round={true} />
 						</WhatsappShareButton>
+					</div>
+					<div className="ml-2">
+						<EmailShareButton subject={title} separator url={path}>
+							<EmailIcon logofillcolor="white" size={40} round={true} />
+						</EmailShareButton>
+					</div>
+					<div className="ml-2">
+						<PocketShareButton title={title} separator url={path}>
+							<PocketIcon logofillcolor="white" size={40} round={true} />
+						</PocketShareButton>
 					</div>
 				</div>
 			</div>

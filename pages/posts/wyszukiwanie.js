@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 
 import { getAllPosts } from '../../lib/posts-util';
-import SearchEngine from '../../components/ui/search-engine';
+import SearchEngine from '../../components/posts/search-engine';
 
 function Archive(props) {
 	const posts = props.posts;
