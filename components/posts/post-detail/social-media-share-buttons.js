@@ -24,7 +24,7 @@ function SocialMediaShareButtons(props) {
 				style={{ fontFamily: 'Open Sans Condensed', letterSpacing: '2px' }}
 				className="mr-2 mb-4 sm:mb-0 font-bold text-orange"
 			>
-				Udostępnij lub zapisz:
+				Podziel się lub zapisz:
 			</div>
 			<div className="flex justify-end">
 				<div className="flex flex-row items-center">
