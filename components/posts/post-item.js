@@ -67,10 +67,10 @@ function PostItem(props) {
 							</div>
 							<div className="text-base text-gray-75">{formattedDate}</div>
 
-							<div className="text-lg xl:text-xl font-bold mb-6">{title}</div>
+							<div className="text-base xl:text-xl font-bold mb-6">{title}</div>
 
 							<div className="flex justify-center">
-								<div className="w-11/12 text-justify">{excerpt}</div>
+								<div className="w-11/12 text-justify leading-snug">{excerpt}</div>
 							</div>
 						</a>
 					</Link>

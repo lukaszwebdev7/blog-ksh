@@ -1,5 +1,5 @@
 ---
-date: '2021-07-14'
+date: '2021-05-07'
 category: 'spolka_partnerska'
 title: 'Kto może być partnerem (wspólnikiem) w spółce partnerskiej ?'
 excerpt: 'Partnerami w spółce mogą być wyłącznie osoby fizyczne, uprawnione do wykonywania wolnych zawodów, określonych w art. 88 lub w odrębnej ustawie.'
