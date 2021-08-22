@@ -4,11 +4,11 @@ import PostItem from '../../../components/posts/post-item';
 
 import { getAllPosts } from '../../../lib/posts-util';
 
-function PartnerskaPostsPage(props) {
+function KomandytowaPostsPage(props) {
 	const [ number, setNumber ] = useState(1);
 	const posts = props.posts;
 
-	const filteredArray = posts.filter((post) => post.category === 'spolka_partnerska');
+	const filteredArray = posts.filter((post) => post.category === 'spolka_komandytowa');
 
 	const size = 6;
 
@@ -33,8 +33,8 @@ function PartnerskaPostsPage(props) {
 
 	useEffect(
 		() => {
-			const stickyNumber = window.sessionStorage.getItem('numberOfArrayPartnerska');
-			const stickyArray = window.sessionStorage.getItem('arrayPartnerska');
+			const stickyNumber = window.sessionStorage.getItem('numberOfArrayKomandytowa');
+			const stickyArray = window.sessionStorage.getItem('arrayKomandytowa');
 
 			if (stickyNumber !== null) {
 				setNumber(Number(stickyNumber));
@@ -44,17 +44,17 @@ function PartnerskaPostsPage(props) {
 				setChosenArray(JSON.parse(stickyArray));
 			}
 		},
-		[ 'numberOfArrayPartnerska' ],
-		[ 'arrayPartnerska' ]
+		[ 'numberOfArrayKomandytowa' ],
+		[ 'arrayKomandytowa' ]
 	);
 
 	useEffect(
 		() => {
-			window.sessionStorage.setItem('numberOfArrayPartnerska', number),
-				window.sessionStorage.setItem('arrayPartnerska', JSON.stringify(chosenArray));
+			window.sessionStorage.setItem('numberOfArrayKomandytowa', number),
+				window.sessionStorage.setItem('arrayKomandytowa', JSON.stringify(chosenArray));
 		},
-		[ 'numberOfArrayPartnerska', number ],
-		[ 'arrayPartnerska', chosenArray ]
+		[ 'numberOfArrayKomandytowa', number ],
+		[ 'arrayKomandytowa', chosenArray ]
 	);
 
 	const active = 'mx-2 p-2 bg-orange-category focus:outline-none rounded text-white';
@@ -82,7 +82,7 @@ function PartnerskaPostsPage(props) {
 	);
 }
 
-export default PartnerskaPostsPage;
+export default KomandytowaPostsPage;
 
 export function getStaticProps() {
 	const allPosts = getAllPosts();

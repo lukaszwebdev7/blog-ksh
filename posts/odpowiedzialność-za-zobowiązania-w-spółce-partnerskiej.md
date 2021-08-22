@@ -21,7 +21,7 @@ Partnerzy ponoszą też subsydiarną odpowiedzialność za zobowiązania spółk
 
 ### Co w razie popełnienia błędu przez kilku partnerów ?
 
-W takim przypadku partnerzy odpowiadają solidarnie, jeżeli wynika to z umowy z klientem albo z ustawy. 
+W takim przypadku partnerzy odpowiadają solidarnie, jeżeli wynika to z umowy z klientem albo z ustawy. Przykładem takiej solidarnej odpowiedzialności będzie odpowiedzialność lekarzy za nieprawidłowe wykonanie przez nich operacji.
 
 ### Czy można przyjąć inny model odpowiedzialności ? 
 

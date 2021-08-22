@@ -18,4 +18,4 @@ Stanie się tak wskutek rozwiązania spółki w związku z połączeniem jej z i
 
 Przyczyny wygaśnięcia mandatu członka zarządu mogą też być określone w umowie spółki, która może przewidywać taki skutek na przykład wobec utraty przez określonego członka zarządu statusu wspólnika.
 
-Członek zarządu może utracić mandat także w wyniku pozbawienia go pełnej zdolności do czynności prawnych - wskutek ubezwłasnowolnienia. 
+Członek zarządu utraci mandat także w wyniku pozbawienia go pełnej zdolności do czynności prawnych - wskutek ubezwłasnowolnienia. 

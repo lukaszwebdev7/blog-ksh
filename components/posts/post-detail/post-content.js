@@ -37,7 +37,7 @@ function PostContent(props) {
 								/>
 							</svg>
 						</div>
-						<div>Powrót do listy</div>
+						<div>Poprzednia strona</div>
 					</div>
 				</button>
 				<div className="flex justify-center text-justify mb-20">
@@ -70,7 +70,7 @@ function PostContent(props) {
 										/>
 									</svg>
 								</div>
-								<div>Powrót do listy</div>
+								<div>Poprzednia strona</div>
 							</div>
 						</button>
 					</article>

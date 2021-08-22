@@ -96,6 +96,27 @@ function NavigationPosts() {
 								letterSpacing: '2px'
 							}}
 							className={
+								router.pathname === '/posts/spolka_komandytowa' ||
+								router.pathname === '/posts/spolka_komandytowa/[slug]' ? (
+									active
+								) : (
+									unactive
+								)
+							}
+						>
+							<Link href="/posts/spolka_komandytowa">
+								<span className="block py-3 cursor-pointer">komandytowa</span>
+							</Link>
+						</div>
+						<div
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
+							className={
 								router.pathname === '/posts/spolka_z_o_o' ||
 								router.pathname === '/posts/spolka_z_o_o/[slug]' ? (
 									active
@@ -146,134 +167,146 @@ function NavigationPosts() {
 					</div>
 				</div>
 
-				<div className="hidden sm:block lg:hidden ">
-					<div className="flex flex-row flex-wrap text-center justify-around">
-						<div className="w-1/3">
-							<div
-								style={{
-									marginLeft: '10px',
-									marginRight: '10px',
-									borderRadius: '5px',
-									fontFamily: 'Open Sans Condensed',
-									letterSpacing: '2px'
-								}}
-								className={router.pathname === '/posts' ? active : unactive}
-							>
-								<Link href="/posts">
-									<span className="block py-3 cursor-pointer">wszystkie</span>
-								</Link>
-							</div>
+				<div className="hidden sm:block lg:hidden">
+					<div className="flex flex-row flex-wrap text-center">
+						<div
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
+							className={router.pathname === '/posts' ? active : unactive}
+						>
+							<Link href="/posts">
+								<span className="block py-3 cursor-pointer">wszystkie</span>
+							</Link>
 						</div>
 
-						<div className="w-1/3">
-							<div
-								style={{
-									marginLeft: '10px',
-									marginRight: '10px',
-									borderRadius: '5px',
-									fontFamily: 'Open Sans Condensed',
-									letterSpacing: '2px'
-								}}
-								className={
-									router.pathname === '/posts/spolka_jawna' ||
-									router.pathname === '/posts/spolka_jawna/[slug]' ? (
-										active
-									) : (
-										unactive
-									)
-								}
-							>
-								<Link href="/posts/spolka_jawna">
-									<span className="block py-3 cursor-pointer">jawna</span>
-								</Link>
-							</div>
+						<div
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
+							className={
+								router.pathname === '/posts/spolka_jawna' ||
+								router.pathname === '/posts/spolka_jawna/[slug]' ? (
+									active
+								) : (
+									unactive
+								)
+							}
+						>
+							<Link href="/posts/spolka_jawna">
+								<span className="block py-3 cursor-pointer">jawna</span>
+							</Link>
 						</div>
 
-						<div className="w-1/3">
-							<div
-								style={{
-									marginLeft: '10px',
-									marginRight: '10px',
-									borderRadius: '5px',
-									fontFamily: 'Open Sans Condensed',
-									letterSpacing: '2px'
-								}}
-								className={
-									router.pathname === '/posts/spolka_partnerska' ||
-									router.pathname === '/posts/spolka_partnerska/[slug]' ? (
-										active
-									) : (
-										unactive
-									)
-								}
-							>
-								<Link href="/posts/spolka_partnerska">
-									<span className="block py-3 cursor-pointer">partnerska</span>
-								</Link>
-							</div>
-						</div>
-						<div className="w-1/3">
-							<div
-								style={{
-									marginLeft: '10px',
-									marginRight: '10px',
-									borderRadius: '5px',
-									fontFamily: 'Open Sans Condensed',
-									letterSpacing: '2px'
-								}}
-								className={
-									router.pathname === '/posts/spolka_z_o_o' ||
-									router.pathname === '/posts/spolka_z_o_o/[slug]' ? (
-										active
-									) : (
-										unactive
-									)
-								}
-							>
-								<Link href="/posts/spolka_z_o_o">
-									<span className="block py-3 cursor-pointer">z o.o.</span>
-								</Link>
-							</div>
+						<div
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
+							className={
+								router.pathname === '/posts/spolka_partnerska' ||
+								router.pathname === '/posts/spolka_partnerska/[slug]' ? (
+									active
+								) : (
+									unactive
+								)
+							}
+						>
+							<Link href="/posts/spolka_partnerska">
+								<span className="block py-3 cursor-pointer">partnerska</span>
+							</Link>
 						</div>
 
-						<div className="w-1/3">
-							<div
-								style={{
-									marginLeft: '10px',
-									marginRight: '10px',
-									borderRadius: '5px',
-									fontFamily: 'Open Sans Condensed',
-									letterSpacing: '2px'
-								}}
-								className={
-									router.pathname === '/posts/prosta_spolka_akcyjna' ||
-									router.pathname === '/posts/prosta_spolka_akcyjna/[slug]' ? (
-										active
-									) : (
-										unactive
-									)
-								}
-							>
-								<Link href="/posts/prosta_spolka_akcyjna">
-									<span className="block py-3 cursor-pointer">P.S.A.</span>
-								</Link>
-							</div>
+						<div
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
+							className={
+								router.pathname === '/posts/spolka_komandytowa' ||
+								router.pathname === '/posts/spolka_komandytowa/[slug]' ? (
+									active
+								) : (
+									unactive
+								)
+							}
+						>
+							<Link href="/posts/spolka_komandytowa">
+								<span className="block py-3 cursor-pointer">komandytowa</span>
+							</Link>
 						</div>
-						<div className="w-1/3">
-							<div
-								style={{
-									marginLeft: '10px',
-									marginRight: '10px',
-									borderRadius: '5px',
-									fontFamily: 'Open Sans Condensed',
-									letterSpacing: '2px'
-								}}
-								className={router.pathname === '/posts/wyszukiwanie' ? activeArchive : unactiveArchive}
-							>
-								<Link href="/posts/wyszukiwanie">
-									<span className="block py-3 cursor-pointer">wyszukiwanie</span>
-								</Link>
-							</div>
+
+						<div
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
+							className={
+								router.pathname === '/posts/spolka_z_o_o' ||
+								router.pathname === '/posts/spolka_z_o_o/[slug]' ? (
+									active
+								) : (
+									unactive
+								)
+							}
+						>
+							<Link href="/posts/spolka_z_o_o">
+								<span className="block py-3 cursor-pointer">z o.o.</span>
+							</Link>
+						</div>
+
+						<div
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
+							className={
+								router.pathname === '/posts/prosta_spolka_akcyjna' ||
+								router.pathname === '/posts/prosta_spolka_akcyjna/[slug]' ? (
+									active
+								) : (
+									unactive
+								)
+							}
+						>
+							<Link href="/posts/prosta_spolka_akcyjna">
+								<span className="block py-3 cursor-pointer">P.S.A.</span>
+							</Link>
+						</div>
+
+						<div
+							style={{
+								marginLeft: '10px',
+								marginRight: '10px',
+								borderRadius: '5px',
+								fontFamily: 'Open Sans Condensed',
+								letterSpacing: '2px'
+							}}
+							className={router.pathname === '/posts/wyszukiwanie' ? activeArchive : unactiveArchive}
+						>
+							<Link href="/posts/wyszukiwanie">
+								<span className="block py-3 cursor-pointer">wyszukiwanie</span>
+							</Link>
 						</div>
 					</div>
 				</div>
