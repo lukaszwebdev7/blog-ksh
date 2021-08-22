@@ -17,6 +17,7 @@ module.exports = {
 			black: '#000000',
 			violet: '#553AA8',
 			orange: '#FF5500',
+			green: '#226602',
 			'amarant-one': '#BC3E75'
 		}),
 		borderColor: (theme) => ({
@@ -29,6 +30,7 @@ module.exports = {
 			violet: '#553AA8',
 			white: '#FFFFFF',
 			lightblue: '#2458C4',
+			green: '#226602',
 			'amarant-one': '#BC3E75',
 			'blue-version': '#233e8b'
 		}),

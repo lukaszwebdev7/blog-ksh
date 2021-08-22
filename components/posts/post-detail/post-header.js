@@ -8,6 +8,9 @@ function PostHeader(props) {
 		if (props.category === 'spolka_partnerska') {
 			return 'spółka partnerska';
 		}
+		if (props.category === 'spolka_komandytowa') {
+			return 'spółka komandytowa';
+		}
 		if (props.category === 'spolka_z_o_o') {
 			return 'spółka z ograniczoną odpowiedzialnością';
 		}

@@ -22,6 +22,9 @@ function PostItem(props) {
 		if (category === 'spolka_partnerska') {
 			return 'spółka partnerska';
 		}
+		if (category === 'spolka_komandytowa') {
+			return 'spółka komandytowa';
+		}
 		if (category === 'spolka_z_o_o') {
 			return 'spółka z o.o.';
 		}
@@ -54,6 +57,8 @@ function PostItem(props) {
 										'border-r border-b border-coffee text-coffee pl-4 mt-2 mb-4'
 									) : '' || category === 'spolka_partnerska' ? (
 										'border-r border-b border-blue-version text-blue-version  pl-4 mt-2 mb-4'
+									) : '' || category === 'spolka_komandytowa' ? (
+										'border-r border-b border-green text-green  pl-4 mt-2 mb-4'
 									) : '' || category === 'spolka_z_o_o' ? (
 										'border-r border-b border-violet text-violet pl-4 mt-2 mb-4'
 									) : '' || category === 'prosta_spolka_akcyjna' ? (
