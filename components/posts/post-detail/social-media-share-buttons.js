@@ -16,7 +16,7 @@ function SocialMediaShareButtons(props) {
 	const { asPath } = useRouter();
 
 	const pathWithoutTitle = asPath.split('/').slice(0, 3).join('/');
-	const path = 'https://spolkaaktywnie' + pathWithoutTitle + `/${slug}/`;
+	const path = 'https://www.spolkaaktywnie' + pathWithoutTitle + `/${slug}/`;
 
 	return (
 		<div className="flex flex-col sm:flex-row justify-end mt-8 mb-4 sm:items-center">
