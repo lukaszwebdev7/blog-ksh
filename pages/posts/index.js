@@ -19,7 +19,7 @@ function AllPostsPage(props) {
 
 	return (
 		<div id="start" className="flex justify-center">
-			<ul className="w-10/12 mb-16 md:mb-32">
+			<ul className="w-11/12 2xl:w-10/12 mb-16 md:mb-32">
 				<ScrollIntoView selector="#start">
 					<Chunks posts={posts} arrays={arrays} />
 				</ScrollIntoView>

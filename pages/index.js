@@ -13,7 +13,7 @@ function HomePage(props) {
 				<title>Blog o spółkach</title>
 				<meta
 					name="description"
-					content="spółka jawna || spółka komandytowa || spółka z ograniczoną odpowiedzialnością || prosta spółka akcyjna"
+					content="Radca Prawny Łukasz Szczepaniak Piaseczno Praktyka: spółka jawna || spółka partnerska || spółka komandytowa || spółka z o.o. || prosta spółka akcyjna"
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>

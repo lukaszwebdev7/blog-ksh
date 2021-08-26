@@ -62,7 +62,7 @@ function PartnerskaPostsPage(props) {
 
 	return (
 		<div className="flex justify-center">
-			<div className="w-10/12">
+			<div className="w-11/12 2xl:w-10/12">
 				<ul className=" flex flex-col sm:flex-row sm:flex-wrap sm:justify-evenly">
 					{chosenArray.map((post) => <PostItem key={post.slug} post={post} />)}
 				</ul>
