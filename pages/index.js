@@ -15,7 +15,7 @@ function HomePage(props) {
 					name="description"
 					content="Radca Prawny Łukasz Szczepaniak Piaseczno Praktyka: spółka jawna || spółka partnerska || spółka komandytowa || spółka z o.o. || prosta spółka akcyjna"
 				/>
-				<link rel="icon" href="/favicon.ico" />
+				{/* <link rel="icon" href="/favicon.ico" /> */}
 				<title>Kancelaria Radcy Prawnego</title>
 			</Head>
 
