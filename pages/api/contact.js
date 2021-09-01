@@ -38,12 +38,14 @@ export default async function(req, res) {
 
 	const transporter = nodemailer.createTransport({
 		port: 465,
-		host: 'poczta.interia.pl',
+		host: 'node-wp1.kru.pl',
 		auth: {
-			user: 'jan.kowalski_122@interia.pl',
+			user: 'spolka@radcapiaseczno.pl',
 			pass: process.env.password
 		},
-		secure: true
+		secure: true,
+		disableFileAccess: true,
+		disableUrlAccess: true
 	});
 
 	const { name, email, message } = req.body;
@@ -54,8 +56,8 @@ export default async function(req, res) {
 	}
 
 	const mailData = {
-		from: 'jan.kowalski_122@interia.pl',
-		to: 'zen_24@wp.pl',
+		from: 'spolka@radcapiaseczno.pl',
+		to: 'lukasz.szczepaniak@interia.pl',
 		subject: `Wiadomość ze strony apółkaaktywnie.pl od ${name}`,
 		text: 'Wiadomość od ' + email + ' o treści: \n' + message
 	};

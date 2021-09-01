@@ -50,13 +50,13 @@ function SendMessage() {
 		const textAlertElem = document.getElementById('text-alert');
 		const recaptchaAlertElem = document.getElementById('recaptcha-alert');
 
-		if (!name || name.trim() === '' || name.length <= 2) {
+		if (!name || name.trim() === '' || name.length <= 2 || name.length > 30) {
 			nameAlertElem.textContent = 'Wpisz imię.';
 			return;
 		} else {
 			nameAlertElem.textContent = '';
 		}
-		if (!email || !email.includes('@') || email.length <= 5) {
+		if (!email || !email.includes('@') || email.length <= 5 || email.length > 50) {
 			emailAlertElem.textContent = 'Nie wpisałeś adresu e-mail, bądź wpisałeś go błędnie.';
 			return;
 		} else {
@@ -64,6 +64,12 @@ function SendMessage() {
 		}
 		if (!message || message.trim() === '' || message.length <= 14) {
 			textAlertElem.textContent = 'Wpisz wiadomość.';
+			return;
+		} else {
+			textAlertElem.textContent = '';
+		}
+		if (message.length > 2000) {
+			textAlertElem.textContent = 'Maksymalna długość wiadomości wynosi 2 000 znaków.';
 			return;
 		} else {
 			textAlertElem.textContent = '';
@@ -123,7 +129,7 @@ function SendMessage() {
 			<div className="w-11/12 md:w-2/3 py-6 md:px-4 bg-mailForm">
 				<form className="contact-form">
 					<div className="sm:flex sm:flex-wrap ">
-						<div className="flex flex-col sm:w-1/2 mb-4">
+						<div className="flex flex-col sm:w-1/2">
 							<div className=" px-3 mb-2">
 								<input
 									type="text"
@@ -139,7 +145,7 @@ function SendMessage() {
 							<div id="name-alert" className="h-7 text-center text-teal-400" />
 						</div>
 
-						<div className="flex flex-col sm:w-1/2 mb-4">
+						<div className="flex flex-col sm:w-1/2">
 							<div className=" px-3 mb-2">
 								<input
 									type="text"
@@ -170,7 +176,7 @@ function SendMessage() {
 									className="border-2 rounded px-3 py-1 w-full focus:border-indigo-400 input"
 								/>
 							</div>
-							<div id="text-alert" className="h-4 text-center text-teal-400" />
+							<div id="text-alert" className="text-center text-teal-400" />
 						</div>
 					</div>
 					<div className="text-right mt-4 mb-2 md:mt-8 mr-4 md:mr-0">
@@ -185,7 +191,7 @@ function SendMessage() {
 					<div id="notification">
 						{notification && <Notification title={notification.title} message={notification.message} />}
 					</div>
-					<div id="recaptcha-alert" className="h-4 text-teal-400 mb-2" />
+					<div id="recaptcha-alert" className="text-teal-400 mb-2" />
 					<ReCAPTCHA
 						size="normal"
 						sitekey="6Lcty4gbAAAAANcVSw3SNdiYmzHU1vxWcNA50Juy"
