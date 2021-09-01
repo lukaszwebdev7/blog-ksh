@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
 
 import {
-	FacebookShareButton,
 	TelegramShareButton,
 	TwitterShareButton,
 	WhatsappShareButton,
@@ -28,11 +27,6 @@ function SocialMediaShareButtons(props) {
 			</div>
 			<div className="flex justify-end">
 				<div className="flex flex-row items-center">
-					<div className="ml-2">
-						<FacebookShareButton url={path}>
-							<FacebookIcon logofillcolor="white" size={40} round={true} />
-						</FacebookShareButton>
-					</div>
 					<div className="ml-2">
 						<TelegramShareButton url={path} title={title}>
 							<TelegramIcon logofillcolor="white" size={40} round={true} />
