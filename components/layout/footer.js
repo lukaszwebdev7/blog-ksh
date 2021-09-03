@@ -17,6 +17,17 @@ function Footer() {
 					</Link>
 				</div>
 				<div>© Wszelkie prawa zastrzeżone</div>
+				<div className="flex justify-center mb-4 mt-2 xl:mb-6">
+					<span className="w-10/12 bg-yellow-box h-px" />
+				</div>
+				<div className="flex justify-center">
+					<div className="w-10/12 text-justify">
+						Strona spolkaaktywnie.pl powstała w celu informowania o wykonywaniu zawodu. Przedstawione tu
+						publikacje nie służą udzielaniu porad prawnych i nie mogą stanowić podstawy podejmowania działań
+						w oparciu o ich treść. Udzielenie porady prawnej wymaga uprzedniej analizy okoliczności
+						konkretnej sprawy.
+					</div>
+				</div>
 			</div>
 
 			<div className="hidden sm:block lg:hidden mb-4">
@@ -36,6 +47,17 @@ function Footer() {
 						<div>Piaseczno, ul. Sienkiewicza 8</div>
 					</div>
 				</div>
+				<div className="flex justify-center mb-4 mt-2 xl:mb-6">
+					<span className="w-10/12 bg-yellow-box h-px" />
+				</div>
+				<div className="flex justify-center">
+					<div className="w-10/12 text-justify">
+						Strona spolkaaktywnie.pl powstała w celu informowania o wykonywaniu zawodu. Przedstawione tu
+						publikacje nie służą udzielaniu porad prawnych i nie mogą stanowić podstawy podejmowania działań
+						w oparciu o ich treść. Udzielenie porady prawnej wymaga uprzedniej analizy okoliczności
+						konkretnej sprawy.
+					</div>
+				</div>
 			</div>
 
 			<div className="hidden lg:block flex flex-col justify-center text-center text-sm xl:text-base 2xl:text-lg">
@@ -53,6 +75,17 @@ function Footer() {
 						<Link href="/polityka">
 							<div>polityka prywatności</div>
 						</Link>
+					</div>
+				</div>
+				<div className="flex justify-center mb-4 mt-2 xl:mb-6">
+					<span className="w-10/12 bg-yellow-box h-px" />
+				</div>
+				<div className="flex justify-center mb-4">
+					<div className="w-3/4 text-justify">
+						Strona spolkaaktywnie.pl powstała w celu informowania o wykonywaniu zawodu. Przedstawione tu
+						publikacje nie służą udzielaniu porad prawnych i nie mogą stanowić podstawy podejmowania działań
+						w oparciu o ich treść. Udzielenie porady prawnej wymaga uprzedniej analizy okoliczności
+						konkretnej sprawy.
 					</div>
 				</div>
 			</div>

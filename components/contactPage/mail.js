@@ -38,6 +38,8 @@ function SendMessage() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
+		setRequestStatus('pending');
+
 		let data = {
 			captchaToken,
 			name,
@@ -109,6 +111,12 @@ function SendMessage() {
 	};
 
 	let notification;
+
+	if (requestStatus === 'pending') {
+		notification = {
+			message: 'Wysyłanie w toku !'
+		};
+	}
 
 	if (requestStatus === 'success') {
 		notification = {
