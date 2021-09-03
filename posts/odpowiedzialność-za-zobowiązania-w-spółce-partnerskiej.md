@@ -4,6 +4,7 @@ category: 'spolka_partnerska'
 title: 'Odpowiedzialność za zobowiązania w spółce partnerskiej'
 excerpt: 'Odpowiedzialność partnera w spółce partnerskiej należy wiązać przede wszystkim z jego błędem w sztuce.'
 image: sztuka.jpg
+video: ''
 ---
 
 Zgodnie z art. 95 § 1 k.s.h. partner nie ponosi odpowiedzialności za zobowiązania spółki powstałe w związku z wykonywaniem przez pozostałych partnerów wolnego zawodu w spółce, jak również za zobowiązania spółki będące następstwem działań lub zaniechań osób zatrudnionych przez spółkę na podstawie umowy o pracę lub innego stosunku prawnego, które podlegały kierownictwu innego partnera przy świadczeniu usług związanych z przedmiotem działalności spółki.

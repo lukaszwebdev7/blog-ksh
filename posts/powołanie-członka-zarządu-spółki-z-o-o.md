@@ -4,6 +4,7 @@ category: 'spolka_z_o_o'
 title: 'Powołanie członków zarządu spółki z ograniczoną odpowiedzialnością. '
 excerpt: 'Zarząd spółki z ograniczoną odpowiedzialnością składa się z jednego albo większej liczby członków.'
 image: teamwork.jpg
+video: ''
 ---
 
 Zarząd spółki z ograniczoną odpowiedzialnością składa się z jednego albo większej liczby członków. Do zarządu mogą być powołane osoby spośród wspólników lub spoza ich grona.

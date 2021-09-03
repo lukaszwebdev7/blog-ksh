@@ -4,6 +4,7 @@ category: 'prosta_spolka_akcyjna'
 title: 'Rodzaje akcji w prostej spółce akcyjnej'
 excerpt: 'Akcje w prostej spółce akcyjnej można podzielić na zwykłe i uprzywilejowane (związane z pewnymi uprawieniami).'
 image: rodzaje.jpg
+video: ''
 ---
 
 Akcje w prostej spółce akcyjnej można podzielić na zwykłe i uprzywilejowane (związane z pewnymi uprawieniami). 

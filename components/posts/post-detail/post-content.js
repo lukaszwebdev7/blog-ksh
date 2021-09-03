@@ -51,6 +51,85 @@ function PostContent(props) {
 						<div className="prose max-w-none">
 							<ReactMarkdown>{post.content}</ReactMarkdown>
 						</div>
+						<div className={post.video ? 'my-10' : ''}>
+							<div className="flex justify-center">
+								<div className="sm:hidden">
+									{post.video ? (
+										<iframe
+											width="352"
+											height="198"
+											src={post.video}
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										/>
+									) : (
+										''
+									)}
+								</div>
+								<div className="hidden sm:block lg:hidden">
+									{post.video ? (
+										<iframe
+											width="500"
+											height="281"
+											src={post.video}
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										/>
+									) : (
+										''
+									)}
+								</div>
+								<div className="hidden lg:block xl:hidden">
+									{post.video ? (
+										<iframe
+											width="580"
+											height="326"
+											src={post.video}
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										/>
+									) : (
+										''
+									)}
+								</div>
+								<div className="hidden xl:block 2xl:hidden">
+									{post.video ? (
+										<iframe
+											width="640"
+											height="360"
+											src={post.video}
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										/>
+									) : (
+										''
+									)}
+								</div>
+								<div className="hidden 2xl:block">
+									{post.video ? (
+										<iframe
+											width="720"
+											height="405"
+											src={post.video}
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen
+										/>
+									) : (
+										''
+									)}
+								</div>
+							</div>
+						</div>
 						<SocialMediaShareButtons post={post} />
 						<button className="lg:hidden mt-6" type="button" onClick={() => router.back()}>
 							<div className="flex lg:flex-row items-center font-bold  text-gray-25">

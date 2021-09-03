@@ -4,6 +4,7 @@ category: 'spolka_jawna'
 title: 'Odpowiedzialność wspólników spółki jawnej cz. I'
 excerpt: 'Zgodnie z art. 22 § 2 k.s.h., jest to odpowiedzialność osobista, nieograniczona, solidarna ze spółką oraz pozostałymi wspólnikami.'
 image: odpow_I.jpg
+video: ''
 ---
 
 Odpowiedzialność wspólników spółki jawnej za zobowiązania tej spółki jest cechą charakterystyczną prowadzenia działalności gospodarczej w tej formie. Powstaje ona z mocy prawa w związku z uzyskaniem statusu wspólnika spółki jawnej.

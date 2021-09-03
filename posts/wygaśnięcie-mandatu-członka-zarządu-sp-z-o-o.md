@@ -4,6 +4,7 @@ category: 'spolka_z_o_o'
 title: 'Wygaśnięcie mandatu członka zarządu sp. z o.o.'
 excerpt: 'Mandat członka zarządu to prawa i obowiązki, przyznane na podstawie ustawy, bądź umowy, ...'
 image: clock.jpg
+video: ''
 ---
 
 Mandat członka zarządu to prawa i obowiązki, przyznane na podstawie ustawy, bądź umowy, konieczne do wykonywania powierzonej funkcji. Mandat członka zarządu jest więc czymś innym, aniżeli kadencja, na którą członek zarządu został powołany. 

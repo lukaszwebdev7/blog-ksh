@@ -4,6 +4,7 @@ category: 'prosta_spolka_akcyjna'
 title: 'Akcje w prostej spółce akcyjnej'
 excerpt: 'Akcje w prostej spółce akcyjnej nie są odpowiednikami akcji w spółce akcyjnej, czy spółce komandytowo-akcyjnej.'
 image: akcje.jpg
+video: ''
 ---
 
 Akcje w prostej spółce akcyjnej nie są odpowiednikami akcji w spółce akcyjnej, czy spółce komandytowo-akcyjnej. Zgodnie z art. 300 (2) § 3 k.s.h. akcje prostej spółki akcyjnej nie posiadają wartości nominalnej, nie stanowią części kapitału akcyjnego i są niepodzielne.
@@ -26,3 +27,4 @@ Niepodzielność akcji oznacza, że nie jest dopuszczalne dzielenie akcji na uł
 ### Jaką rolę pełnią akcje w prostej spółce akcyjnej ?
 
 Akcje w prostej spółce akcyjnej wyrażają prawa członkowskie w spółce, innymi słowy, z akcji wypływa ogół uprawnień akcjonariusza w spółce akcyjnej. Akcjonariusz może mieć jedną, albo więcej akcji. Pozycję akcjonariusza wyznacza stosunek przysługujących mu akcji do liczby wszystkich akcji wyemitowanych w danej spółce, co wynika z art. 4 § 2 (2) k.s.h.
+

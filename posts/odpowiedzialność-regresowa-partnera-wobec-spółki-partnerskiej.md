@@ -4,6 +4,7 @@ category: 'spolka_partnerska'
 title: 'Odpowiedzialność regresowa partnera wobec spółki partnerskiej'
 excerpt: 'W umowie spółki partnerskiej można zatem wyłączyć odpowiedzialność partnera względem spółki ...'
 image: money.jpg
+video: ''
 ---
 
 W przypadku, gdy w ramach solidarnej odpowiedzialności partnera i spółki za błąd w sztuce partnera, dojdzie do uszczuplenia majątku spółki, spółka może mieć roszczenie regresowe wobec partnera w związku z uszczupleniem jej majątku.

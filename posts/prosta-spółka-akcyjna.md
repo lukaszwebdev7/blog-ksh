@@ -4,6 +4,7 @@ category: 'prosta_spolka_akcyjna'
 title: 'Nowa spółka w Kodeksie spółek handlowych'
 excerpt: 'PSA jest nowoczesną formą niepublicznej spółki kapitałowej przeznaczoną dla innowacyjnych przedsięwzięć.'
 image: psa.jpg
+video: ''
 ---
 
 Prosta spółka akcyjna została dodana do polskiego systemu prawnego z dniem 1.07.2021 r. ustawą z 19.07.2019 r. o zmianie ustawy – Kodeks spółek handlowych oraz niektórych innych ustaw (Dz.U. poz. 1655).

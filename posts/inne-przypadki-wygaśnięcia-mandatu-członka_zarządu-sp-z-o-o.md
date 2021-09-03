@@ -4,6 +4,7 @@ category: 'spolka_z_o_o'
 title: 'Inne przypadki wygaśnięcia mandatu członka zarządu sp. z o.o.'
 excerpt: 'Stanie się tak, jeśli członek zarządu zostanie skazany prawomocnym wyrokiem za popełnienie przestępstwa ...'
 image: hammer.jpg
+video: ''
 ---
 
 Do wygaśnięcia mandatu członka zarządu spółki z ograniczoną odpowiedzialnością dojdzie także w kilku innych sytuacjach, aniżeli wskazane w przepisach art. 202 i 203 k.s.h. 

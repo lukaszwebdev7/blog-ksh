@@ -4,6 +4,7 @@ category: 'spolka_komandytowa'
 title: 'Powstanie spółki komandytowej cz. I'
 excerpt: 'Komplementariusz to wspólnik, który wobec wierzycieli ponosi odpowiedzialność za zobowiązania spółki bez ograniczenia.'
 image: writing.jpg
+video: ''
 ---
 
 Założenie spółki komandytowej obejmuje szereg czynności i aspektów. W tym artykule przedstawię ogóle ramy tego procesu.

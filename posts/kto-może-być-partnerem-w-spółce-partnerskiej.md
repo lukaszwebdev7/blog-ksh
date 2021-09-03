@@ -4,6 +4,7 @@ category: 'spolka_partnerska'
 title: 'Kto może być partnerem (wspólnikiem) w spółce partnerskiej ?'
 excerpt: 'Partnerami w spółce mogą być wyłącznie osoby fizyczne, uprawnione do wykonywania wolnych zawodów, określonych w art. 88 lub w odrębnej ustawie.'
 image: med.jpg
+video: ''
 ---
 
 Spółką partnerską jest spółka osobową, utworzoną przez wspólników (partnerów) w celu wykonywania wolnego zawodu w spółce prowadzącej przedsiębiorstwo pod własną firmą. Spółka może być zawiązana w celu wykonywania więcej niż jednego wolnego zawodu, chyba że odrębna ustawa stanowi inaczej.

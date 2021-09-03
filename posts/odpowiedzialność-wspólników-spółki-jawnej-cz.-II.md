@@ -4,6 +4,7 @@ category: 'spolka_jawna'
 title: 'Odpowiedzialność wspólników spółki jawnej cz. II'
 excerpt: 'W świetle art. 31 k.s.h. odpowiedzialność wspólników jest, w przeciwieństwie do odpowiedzialności samej spółki, subsydiarna.'
 image: odpow_II.jpg
+video: ''
 ---
 ### Kiedy wierzyciel będzie uprawniony do sięgnięcia do majątku wspólnika ?
 
