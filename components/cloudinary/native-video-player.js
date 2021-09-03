@@ -1,6 +1,6 @@
 import 'cloudinary-video-player/dist/cld-video-player.min.js';
 import 'cloudinary-video-player/dist/cld-video-player.min.css';
-import { Cloudinary, Transformation } from 'cloudinary-core';
+import { Cloudinary } from 'cloudinary-core';
 import { useEffect } from 'react';
 
 const NativeVideoPlayer = () => {
