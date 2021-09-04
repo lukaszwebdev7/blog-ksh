@@ -81,7 +81,7 @@ function Footer() {
 					<span className="w-10/12 bg-yellow-box h-px" />
 				</div>
 				<div className="flex justify-center mb-4">
-					<div className="w-3/4 text-justify">
+					<div className="lg:w-3/4 text-justify">
 						Strona spolkaaktywnie.pl powstała w celu informowania o wykonywaniu zawodu. Przedstawione tu
 						publikacje nie służą udzielaniu porad prawnych i nie mogą stanowić podstawy podejmowania działań
 						w oparciu o ich treść. Udzielenie porady prawnej wymaga uprzedniej analizy okoliczności

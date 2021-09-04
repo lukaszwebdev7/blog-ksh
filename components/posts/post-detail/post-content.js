@@ -51,7 +51,7 @@ function PostContent(props) {
 						<div className="prose max-w-none">
 							<ReactMarkdown>{post.content}</ReactMarkdown>
 						</div>
-						<div className={post.video ? 'my-10' : ''}>
+						<div className={post.video ? 'mt-10 mb-24' : ''}>
 							<div className="flex justify-center">
 								<div className="sm:hidden">
 									{post.video ? (
