@@ -154,6 +154,14 @@ function PostContent(props) {
 						</button>
 					</article>
 				</div>
+				<div className="flex justify-center">
+					<div className="mb-4 xl:mb-0 text-sm w-11/12 md:w-10/12 lg:w-7/12 2xl:w-1/2 text-justify">
+						* Blog spolkaaktywnie.pl powstał w celu informowania o wykonywaniu zawodu. Przedstawione tu
+						publikacje nie służą udzielaniu porad prawnych i nie mogą stanowić podstawy podejmowania działań
+						w oparciu o ich treść. Udzielenie porady prawnej wymaga uprzedniej analizy okoliczności
+						konkretnej sprawy.
+					</div>
+				</div>
 			</div>
 		</div>
 	);

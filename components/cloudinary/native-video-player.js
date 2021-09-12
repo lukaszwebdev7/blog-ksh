@@ -14,7 +14,7 @@ const NativeVideoPlayer = () => {
 			width: '720'
 		});
 		videoPlayer.source(
-			'https://res.cloudinary.com/da7fhschq/video/upload/v1630687919/na_stron%C4%99_long_ylpdxd.mp4'
+			'https://res.cloudinary.com/da7fhschq/video/upload/v1631483355/na_stron%C4%99_final_b6opsj.mp4'
 		);
 	});
 	return (
