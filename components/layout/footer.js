@@ -21,7 +21,7 @@ function Footer() {
 					<span className="w-10/12 bg-yellow-box h-px" />
 				</div>
 				<div className="flex justify-center">
-					<div className="w-10/12 text-justify">
+					<div className="w-10/12 text-justify text-gray text-xs">
 						Strona spolkaaktywnie.pl powstała w celu informowania o wykonywaniu zawodu. Przedstawione tu
 						publikacje nie służą udzielaniu porad prawnych i nie mogą stanowić podstawy podejmowania działań
 						w oparciu o ich treść. Udzielenie porady prawnej wymaga uprzedniej analizy okoliczności
@@ -51,7 +51,7 @@ function Footer() {
 					<span className="w-10/12 bg-yellow-box h-px" />
 				</div>
 				<div className="flex justify-center">
-					<div className="w-10/12 text-justify">
+					<div className="w-10/12 text-justify text-gray text-sm">
 						Strona spolkaaktywnie.pl powstała w celu informowania o wykonywaniu zawodu. Przedstawione tu
 						publikacje nie służą udzielaniu porad prawnych i nie mogą stanowić podstawy podejmowania działań
 						w oparciu o ich treść. Udzielenie porady prawnej wymaga uprzedniej analizy okoliczności
@@ -81,7 +81,7 @@ function Footer() {
 					<span className="w-10/12 bg-yellow-box h-px" />
 				</div>
 				<div className="flex justify-center mb-4">
-					<div className="lg:w-3/4 text-justify">
+					<div className="lg:w-3/4 lg:text-justify 2xl:text-center text-sm text-gray">
 						Strona spolkaaktywnie.pl powstała w celu informowania o wykonywaniu zawodu. Przedstawione tu
 						publikacje nie służą udzielaniu porad prawnych i nie mogą stanowić podstawy podejmowania działań
 						w oparciu o ich treść. Udzielenie porady prawnej wymaga uprzedniej analizy okoliczności
