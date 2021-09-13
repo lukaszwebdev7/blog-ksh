@@ -47,6 +47,7 @@ function PostContent(props) {
 							category={post.category}
 							title={post.title}
 							image={imagePath}
+							video={post.video}
 						/>
 						<div className="prose max-w-none">
 							<ReactMarkdown>{post.content}</ReactMarkdown>

@@ -36,7 +36,7 @@ function SearchEngine(props) {
 				<button />
 			</div>
 			<div className="mb-6 md:mb-0 md:mr-6">
-				{sValue !== null ? (
+				{sValue !== null && sValue !== '' ? (
 					posts.map((post, index) => {
 						if (post.title.includes(sValue) || post.content.includes(sValue)) {
 							return (
