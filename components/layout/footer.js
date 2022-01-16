@@ -9,8 +9,8 @@ function Footer() {
 			<div className="sm:hidden flex flex-col justify-center text-center font-bold text-sm text-gray-25 mb-2">
 				<div className="">radca prawny Łukasz Szczepaniak</div>
 				<div>tel.: 505 305 893</div>
-				<div>e-mail: LS@radcapiaseczno.pl</div>
-				<div>Piaseczno, ul. Sienkiewicza 8</div>
+				<div />
+				<div />
 				<div className="cursor-pointer">
 					<Link href="/polityka">
 						<div>polityka prywatności</div>
@@ -35,8 +35,8 @@ function Footer() {
 					</div>
 					<div className="w-1/2 font-bold text-base text-gray-25 text-center">
 						<div>tel.: 505 305 893</div>
-						<div>e-mail: LS@radcapiaseczno.pl</div>
-						<div>Piaseczno, ul. Sienkiewicza 8</div>
+						<div />
+						<div />
 					</div>
 				</div>
 				<div className="flex justify-center mb-4 mt-2 xl:mb-6">
@@ -48,8 +48,8 @@ function Footer() {
 				<div className="flex flex-row justify-center font-bold text-gray-25  mt-3 mb-4">
 					<div className="lg:w-1/5">radca prawny Łukasz Szczepaniak</div>
 					<div className="lg:w-1/5">telefon: 505 305 893</div>
-					<div className="lg:w-1/5">e-mail: LS@radcapiaseczno.pl</div>
-					<div className="lg:w-1/5">Piaseczno, ul. Sienkiewicza 8</div>
+					<div className="lg:w-1/5" />
+					<div className="lg:w-1/5" />
 				</div>
 				<div className="flex flex-row justify-center mb-4 xl:mb-6">
 					<div className="mr-4">

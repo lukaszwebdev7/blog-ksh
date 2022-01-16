@@ -16,7 +16,7 @@ function Contact() {
 			</div>
 			<SendMessage />
 			<FacebookMessenger />
-			<div className="w-full flex flex-col justify-center mb-20 md:mb-24">
+			{/* <div className="w-full flex flex-col justify-center mb-20 md:mb-24">
 				<div className="flex justify-center text-center mb-2">
 					<p
 						style={{ fontFamily: 'Roboto Condensed' }}
@@ -42,7 +42,7 @@ function Contact() {
 						tabIndex="0"
 					/>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 }
