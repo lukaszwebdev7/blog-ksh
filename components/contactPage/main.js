@@ -47,7 +47,7 @@ function AddressData() {
 							</div>
 						</div>
 						<div className="mb-4 font-bold mt-4 text-lg md:text-2xl">kontakt e-mail</div>
-						<div className="mb-4 text-lg md:text-xl">LS@radcapiaseczno.pl</div>
+						<div className="mb-4 text-lg md:text-xl" />
 					</div>
 				</div>
 
@@ -72,7 +72,7 @@ function AddressData() {
 							</div>
 						</div>
 						<div className="mb-4 font-bold mt-4 text-lg md:text-2xl">biuro kancelarii</div>
-						<div className="mb-4 text-lg md:text-xl">Piaseczno, ul. Sienkiewicza 8</div>
+						<div className="mb-4 text-lg md:text-xl" />
 					</div>
 				</div>
 			</div>
